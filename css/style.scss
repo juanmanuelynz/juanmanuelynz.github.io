@@ -115,17 +115,6 @@ body {
         width: 27px;
         height: auto;
     }
-    
-    &:hover {
-        .seed {
-            /* This timing applies on the way OUT */
-            transition-timing-function: ease-in;
-            /* Quick on the way out */
-            transition: 0.2s;
-            fill: $color-lorange;
-        }
-    }
-   
 }
 
 

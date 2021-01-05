@@ -94,20 +94,13 @@ body {
   .particular .seed {
     width: 27px;
     height: auto; }
-  /* line 120, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
-  .particular:hover .seed {
-    /* This timing applies on the way OUT */
-    transition-timing-function: ease-in;
-    /* Quick on the way out */
-    transition: 0.2s;
-    fill: #F26A25; }
 
 /* TEXT */
-/* line 134, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 123, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h1, h2, h3, h4, h5, h6, p {
   color: #10100F; }
 
-/* line 138, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 127, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h1 {
   font-family: kepler-std-subhead, serif;
   font-weight: 700;
@@ -116,7 +109,7 @@ h1 {
   line-height: 100%;
   margin: 32px 0 0; }
 
-/* line 147, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 136, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h2 {
   font-family: kepler-std-subhead, serif;
   font-weight: 700;
@@ -125,7 +118,7 @@ h2 {
   line-height: 100%;
   margin: 24px 0 0; }
 
-/* line 156, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 145, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h3 {
   font-family: 'Inter', helvetiva, sans-serif;
   font-weight: 700;
@@ -134,24 +127,24 @@ h3 {
   line-height: 100%;
   margin: 16px 0 0; }
 
-/* line 165, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 154, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 p {
   line-height: 150%;
   font-size: 16px;
   margin: 0 0 24px; }
 
-/* line 171, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 160, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 a {
   position: relative;
   cursor: pointer;
   text-decoration: none;
   color: #10100F;
   width: auto !important; }
-  /* line 178, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 167, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   a:hover {
     color: #10100F;
     text-decoration: none; }
-  /* line 183, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 172, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   a .underline {
     display: block;
     position: absolute;
