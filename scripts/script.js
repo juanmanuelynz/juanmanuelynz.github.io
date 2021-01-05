@@ -33,6 +33,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
     }
     
+    function animPath(path) {
+        anime({
+          targets: path,
+          strokeDashoffset: [0, anime.setDashoffset],
+          easing: 'easeInOutSine',
+          duration: 1000,
+          delay: function(el, i) { return i * 150 },
+          direction: 'alternate',
+          loop: false,
+          complete: function(anim) {
+            anime({
+              targets: path,
+              strokeDashoffset: [anime.setDashoffset, 0],
+              easing: 'easeInOutSine',
+              duration: 1000,
+              delay: function(el, i) { return i * 150 },
+              direction: 'alternate',
+              loop: false,              
+            });
+          }
+        });
+    }
+    
     let heart = document.querySelector(".heart");
     let head = document.querySelector(".head");
     
@@ -46,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     
     heart.addEventListener("click", function () {
+        animPath('.heart path');
         grainAnim.play();
     });
     
@@ -59,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     
     head.addEventListener("click", function () {
+        animPath('.head path');
         grainAnim.pause();
     });
     

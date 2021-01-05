@@ -77,30 +77,28 @@ body {
   width: 48px;
   height: auto;
   z-index: 2000;
-  cursor: pointer;
-  stroke-width: 3px;
-  stroke: #10100F; }
-  /* line 103, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  cursor: pointer; }
+  /* line 100, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   .logo.heart {
     top: auto;
     bottom: 18px; }
 
-/* line 109, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 106, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .particular {
   position: absolute;
   bottom: 21px;
   right: 23px; }
-  /* line 114, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 111, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   .particular .seed {
     width: 27px;
     height: auto; }
 
 /* TEXT */
-/* line 123, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 120, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h1, h2, h3, h4, h5, h6, p {
   color: #10100F; }
 
-/* line 127, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 124, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h1 {
   font-family: kepler-std-subhead, serif;
   font-weight: 700;
@@ -109,7 +107,7 @@ h1 {
   line-height: 100%;
   margin: 32px 0 8px; }
 
-/* line 136, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 133, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h2 {
   font-family: kepler-std-subhead, serif;
   font-weight: 700;
@@ -118,7 +116,7 @@ h2 {
   line-height: 100%;
   margin: 24px 0 8px; }
 
-/* line 145, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 142, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h3 {
   font-family: 'Inter', helvetiva, sans-serif;
   font-weight: 700;
@@ -127,24 +125,24 @@ h3 {
   line-height: 100%;
   margin: 16px 0 8px; }
 
-/* line 154, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 151, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 p {
   line-height: 150%;
   font-size: 16px;
   margin: 0 0 24px; }
 
-/* line 160, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 157, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 a {
   position: relative;
   cursor: pointer;
   text-decoration: none;
   color: #10100F;
   width: auto !important; }
-  /* line 167, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 164, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   a:hover {
     color: #10100F;
     text-decoration: none; }
-  /* line 172, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 169, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   a .underline {
     display: block;
     position: absolute;
