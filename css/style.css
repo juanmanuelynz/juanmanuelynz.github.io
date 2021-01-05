@@ -1,12 +1,12 @@
 /* FONT IMPORT */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://use.typekit.net/tsq5whw.css");
-/* line 15, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 15, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .space {
   height: 720px; }
 
 /* BODY - Background */
-/* line 20, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 20, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 body {
   position: relative;
   padding: 18px;
@@ -20,7 +20,7 @@ body {
   font-family: 'Inter', helvetica, sans-serif;
   letter-spacing: -0.01em; }
 
-/* line 36, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 36, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 #grain {
   z-index: -1;
   content: "";
@@ -34,7 +34,7 @@ body {
   background-repeat: repeat; }
 
 /* GUI */
-/* line 50, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 50, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 #gui {
   position: absolute;
   width: 100%;
@@ -43,29 +43,29 @@ body {
   left: 0; }
 
 /*NAV*/
-/* line 59, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 59, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .navbar-collapse {
   justify-content: flex-end; }
 
-/* line 63, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 63, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .navbar-light .navbar-nav .nav-link {
   color: #10100F;
   font-weight: 400; }
 
-/* line 68, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 68, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   font-weight: 700; }
 
-/* line 72, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 72, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .navbar-light .navbar-nav .nav-link:hover {
   color: #0C978B; }
 
 /* LOGO */
-/* line 82, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 82, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 #juan {
   display: none; }
 
-/* line 86, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 86, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .logo {
   position: absolute;
   left: 18px;
@@ -76,23 +76,23 @@ body {
   cursor: pointer;
   stroke-width: 3px;
   stroke: #10100F; }
-  /* line 99, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+  /* line 99, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   .logo.heart {
     top: auto;
     bottom: 18px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg); }
 
-/* line 108, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 108, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .particular {
   position: absolute;
   bottom: 21px;
   right: 23px; }
-  /* line 113, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+  /* line 113, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   .particular .seed {
     width: 27px;
     height: auto; }
-  /* line 119, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+  /* line 119, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   .particular:hover .seed {
     /* This timing applies on the way OUT */
     transition-timing-function: ease-in;
@@ -101,11 +101,11 @@ body {
     fill: #F26A25; }
 
 /* TEXT */
-/* line 133, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 133, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h1, h2, h3, h4, h5, h6, p {
   color: #10100F; }
 
-/* line 137, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 137, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h1 {
   font-family: kepler-std-subhead, serif;
   font-weight: 700;
@@ -114,7 +114,7 @@ h1 {
   line-height: 100%;
   margin: 32px 0 0; }
 
-/* line 146, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 146, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h2 {
   font-family: kepler-std-subhead, serif;
   font-weight: 700;
@@ -123,7 +123,7 @@ h2 {
   line-height: 100%;
   margin: 24px 0 0; }
 
-/* line 155, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 155, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h3 {
   font-family: 'Inter', helvetiva, sans-serif;
   font-weight: 700;
@@ -132,24 +132,24 @@ h3 {
   line-height: 100%;
   margin: 16px 0 0; }
 
-/* line 164, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 164, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 p {
   line-height: 150%;
   font-size: 16px;
   margin: 0 0 24px; }
 
-/* line 170, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+/* line 170, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 a {
   position: relative;
   cursor: pointer;
   text-decoration: none;
   color: #10100F;
   width: auto !important; }
-  /* line 177, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+  /* line 177, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   a:hover {
     color: #10100F;
     text-decoration: none; }
-  /* line 182, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/style.scss */
+  /* line 182, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   a .underline {
     display: block;
     position: absolute;

@@ -21,7 +21,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         return tl;
     }
     
-    document.querySelector(".heart").addEventListener("click", function () {
+    let heart = document.querySelector(".heart");
+    let head = document.querySelector(".head");
+    
+    heart.addEventListener("click", function () {
          masterTL
 //            .add(grain(),0)
 //            .timeScale(0.7)
@@ -29,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             .play(); 
     });
     
-    document.querySelector(".head").addEventListener("click", function () {
+    head.addEventListener("click", function () {
         masterTL.pause();
     });
 /////////////////////////////////////////////////////////////////////
