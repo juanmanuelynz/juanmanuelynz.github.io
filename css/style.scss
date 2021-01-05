@@ -56,6 +56,10 @@ body {
 }
 
 /*NAV*/
+.navbar {
+    justify-content: flex-end;
+}
+
 .navbar-collapse {
     justify-content: flex-end;
 }
@@ -98,10 +102,7 @@ body {
     
     &.heart {
         top: auto;        
-        bottom: 18px;
-        
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);              
+        bottom: 18px;          
     }
 }
 
