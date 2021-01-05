@@ -1,0 +1,153 @@
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://use.typekit.net/tsq5whw.css");
+/* line 15, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+.space {
+  height: 720px; }
+
+/* BODY - Background */
+/* line 20, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+body {
+  position: relative;
+  padding: 18px;
+  background-color: #E9EDD8;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Inter', helvetica, sans-serif;
+  letter-spacing: -0.01em; }
+
+/* line 36, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+#grain {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 300vw;
+  height: 310vh;
+  left: -50%;
+  top: -50%;
+  opacity: 0.1;
+  background-image: url("https://cdn.glitch.com/0691a483-864c-4166-83d8-d56da3384a38%2Fgrain-black.png?v=1607854960429");
+  background-repeat: repeat; }
+
+/*NAV*/
+/* line 50, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+.navbar-collapse {
+  justify-content: flex-end; }
+
+/* line 54, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+.navbar-light .navbar-nav .nav-link {
+  color: #10100F;
+  font-weight: 400; }
+
+/* line 59, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  font-weight: 700; }
+
+/* line 63, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0C978B; }
+
+/* TEXT */
+/* line 72, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+h1, h2, h3, h4, h5, h6, p {
+  color: #10100F; }
+
+/* line 76, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+h1 {
+  font-family: kepler-std-subhead, serif;
+  font-weight: 700;
+  font-size: 90px;
+  letter-spacing: -0.01em;
+  line-height: 100%;
+  margin: 32px 0 0; }
+
+/* line 85, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+h2 {
+  font-family: kepler-std-subhead, serif;
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: -0.01em;
+  line-height: 100%;
+  margin: 24px 0 0; }
+
+/* line 94, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+h3 {
+  font-family: 'Inter', helvetiva, sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: -0.01em;
+  line-height: 100%;
+  margin: 16px 0 0; }
+
+/* line 103, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+p {
+  line-height: 150%;
+  font-size: 16px;
+  margin: 0 0 24px; }
+
+/* line 109, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+a {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: #10100F;
+  width: auto !important; }
+  /* line 116, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+  a:hover {
+    color: #10100F;
+    text-decoration: none; }
+  /* line 121, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+  a .underline {
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #10100F; }
+
+/* LOGO */
+/* line 134, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+#juan {
+  display: none; }
+
+/* line 138, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+.logo {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  width: 48px;
+  height: auto;
+  z-index: 2000;
+  cursor: pointer;
+  stroke-width: 3px;
+  stroke: #10100F; }
+  /* line 151, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+  .logo.heart {
+    top: auto;
+    bottom: 18px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+
+/* line 160, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+.particular {
+  position: absolute;
+  bottom: 21px;
+  right: 23px; }
+  /* line 165, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+  .particular .seed {
+    width: 27px;
+    height: auto; }
+  /* line 171, /Users/juanmanuelynz/Creative Cloud Files/Juan/web/style.scss */
+  .particular:hover .seed {
+    /* This timing applies on the way OUT */
+    transition-timing-function: ease-in;
+    /* Quick on the way out */
+    transition: 0.2s;
+    fill: #F26A25; }
+
+/*# sourceMappingURL=style.css.map */
