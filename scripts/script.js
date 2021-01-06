@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         anime({
           targets: path,
           strokeDashoffset: [0, anime.setDashoffset],
-          easing: 'easeInOutSine',
-          duration: 1000,
+          easing: 'easeInOutQuint',
+          duration: 1200,
           delay: function(el, i) { return i * 150 },
           direction: 'alternate',
           loop: false,
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             anime({
               targets: path,
               strokeDashoffset: [anime.setDashoffset, 0],
-              easing: 'easeInOutSine',
+              easing: 'easeInExpo',
               duration: 1000,
               delay: 1000,
               direction: 'alternate',

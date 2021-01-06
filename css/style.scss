@@ -12,40 +12,6 @@ $color-white: #FAFAFA;
 $color-black: #10100F;
 
 
-.space {
-  height: 720px;
-}
-
-/* BODY - Background */
-body {
-    position: relative;
-    padding: 18px;
-    background-color: $color-whiteMana;
-    width: 100%; 
-    height: 100vh;
-    overflow: hidden;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    font-family: 'Inter', helvetica, sans-serif;
-    letter-spacing: -0.01em;
-}
-
-#grain{
-    z-index:-1;
-    content:"";
-    position: absolute;
-    width: 300vw;
-    height: 310vh;        
-    left: -50%;
-    top: -50%;
-    opacity: 0.18;
-    background-image: url('/assets/grain-black.png');  
-    background-repeat: repeat;
-}
-
 /* GUI */
 #gui {
     position: absolute;
@@ -114,6 +80,50 @@ body {
     }
 }
 
+/* BODY - Background */
+body {
+    position: relative;
+    padding: 18px;
+    background-color: $color-whiteMana;
+    width: 100%; 
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: 'Inter', helvetica, sans-serif;
+    letter-spacing: -0.01em;
+}
+
+#grain{
+    z-index:-1;
+    content:"";
+    position: absolute;
+    width: 300vw;
+    height: 310vh;        
+    left: -50%;
+    top: -50%;
+    opacity: 0.18;
+    background-image: url('/assets/grain-black.png');  
+    background-repeat: repeat;
+}
+
+.container {
+    &.main {
+        height: 100%;
+        overflow: scroll;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    
+    .side-col {
+//        border-left: 1px solid $color-black;
+        padding: 16px 40px;
+        margin-top: 24px;
+    }
+}
 
 
 /* TEXT */
@@ -148,6 +158,15 @@ h3 {
   margin: 16px 0 8px;
 }
 
+h4 {
+  font-family: 'Inter', helvetiva, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  line-height: 100%;
+  margin: 16px 0 8px;
+}
+
 p {
   line-height: 150%;
   font-size: 16px;
@@ -169,7 +188,7 @@ a {
     .underline {
         display: block;
         position: absolute;
-        bottom: -1px;
+        bottom: -1.8px;
         left: 0; // Animated via JS
         width: 0; // Animated via JS
         height: 2px;
@@ -177,4 +196,19 @@ a {
     }
 }
 
+ul {
+    &.no-bullets {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 16px;
+    }
+    li {
+        margin-bottom: 8px;
+        font-size: 14px;
+        
+        span {
+            font-weight: 700;
+        }        
+    }
+}
 
