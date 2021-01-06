@@ -34,26 +34,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     
     function animPath(path) {
-        anime({
+        var tl = anime.timeline();
+        tl.add({
           targets: path,
           strokeDashoffset: [0, anime.setDashoffset],
           easing: 'easeInOutQuint',
           duration: 1200,
-          delay: function(el, i) { return i * 150 },
-          direction: 'alternate',
-          loop: false,
-          complete: function(anim) {
-            anime({
-              targets: path,
-              strokeDashoffset: [anime.setDashoffset, 0],
-              easing: 'easeInExpo',
-              duration: 1000,
-              delay: 1000,
-              direction: 'alternate',
-              loop: false,              
-            });
-          }
-        });
+          delay: function(el, i) { return i * 150 },          
+        })       
+        .add({
+          targets: path,
+          strokeDashoffset: [anime.setDashoffset, 0],
+          duration: 1000,
+          easing: 'easeInExpo'       
+        }, '+=1000');            
     }
     
     let heart = document.querySelector(".heart");
