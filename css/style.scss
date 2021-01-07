@@ -47,6 +47,19 @@ $color-black: #10100F;
     transition: all 250ms ease-out;
 }
 
+.nav-link {
+    &:focus {
+        border-radius: 4px;
+        box-shadow: rgba(12, 151, 139, .3) 0px 0px 0px 4px;
+        outline: 0px;
+
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+    }
+}
+
 //.navbar-expand-lg .navbar-nav {
 //    flex-direction: column;
 //}
@@ -278,4 +291,52 @@ form {
     button {
         margin-top: 24px;
     }
+}
+
+/*SOCIAL*/
+.social {
+    margin-top: 32px;
+    p {
+        margin-bottom: 8px;    
+    }
+    
+    .social-wrapper {
+        display: flex;
+        align-items: center;
+        
+        a {
+            margin-right: 16px;
+            height: 32px;
+            
+            &:focus {
+                border-radius: 4px;
+                box-shadow: rgba(12, 151, 139, .3) 0px 0px 0px 4px;
+                outline: 0px;
+                
+                -webkit-transition: all 300ms ease-out;
+                -moz-transition: all 300ms ease-out;
+                -o-transition: all 300ms ease-out;
+                transition: all 300ms ease-out;
+            }
+            
+            &.insta {
+                &:focus {
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+        .icon {
+            width: 32px;
+            height: auto;
+            
+            &:hover {
+                fill: $color-nepaliGreen;
+                -webkit-transition: all 250ms ease-out;
+                -moz-transition: all 250ms ease-out;
+                -o-transition: all 250ms ease-out;
+                transition: all 250ms ease-out;
+            }      
+        }
+    }       
 }

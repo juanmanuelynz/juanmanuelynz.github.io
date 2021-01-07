@@ -36,12 +36,22 @@
   -o-transition: all 250ms ease-out;
   transition: all 250ms ease-out; }
 
+/* line 51, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+.nav-link:focus {
+  border-radius: 4px;
+  box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+  outline: 0px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out; }
+
 /* LOGO */
-/* line 56, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 69, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 #juan {
   display: none; }
 
-/* line 60, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 73, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .logo {
   position: absolute;
   left: 18px;
@@ -50,23 +60,23 @@
   height: auto;
   z-index: 2000;
   cursor: pointer; }
-  /* line 70, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 83, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   .logo.heart {
     top: auto;
     bottom: 18px; }
 
-/* line 76, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 89, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .particular {
   position: absolute;
   bottom: 21px;
   right: 23px; }
-  /* line 81, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 94, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   .particular .seed {
     width: 27px;
     height: auto; }
 
 /* BODY - Background */
-/* line 88, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 101, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 body {
   position: relative;
   padding: 18px;
@@ -80,7 +90,7 @@ body {
   font-family: 'Inter', helvetica, sans-serif;
   letter-spacing: -0.01em; }
 
-/* line 104, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 117, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 #grain {
   z-index: -1;
   content: "";
@@ -93,24 +103,24 @@ body {
   background-image: url("/assets/grain-black.png");
   background-repeat: repeat; }
 
-/* line 118, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 131, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .container.main {
   height: 100%;
   overflow: scroll;
   margin-top: 60px;
   margin-bottom: 60px; }
 
-/* line 125, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 138, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .container .side-col {
   padding: 0 0 0 70px;
   margin-top: 40px; }
 
 /* TEXT */
-/* line 134, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 147, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h1, h2, h3, h4, h5, h6, p {
   color: #10100F; }
 
-/* line 138, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 151, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h1 {
   font-family: kepler-std-subhead, serif;
   font-weight: 700;
@@ -119,7 +129,7 @@ h1 {
   line-height: 100%;
   margin: 32px 0 8px; }
 
-/* line 147, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 160, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h2 {
   font-family: kepler-std-subhead, serif;
   font-weight: 700;
@@ -128,7 +138,7 @@ h2 {
   line-height: 100%;
   margin: 24px 0 8px; }
 
-/* line 156, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 169, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h3 {
   font-family: 'Inter', helvetiva, sans-serif;
   font-weight: 700;
@@ -137,7 +147,7 @@ h3 {
   line-height: 100%;
   margin: 16px 0 8px; }
 
-/* line 165, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 178, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 h4 {
   font-family: 'Inter', helvetiva, sans-serif;
   font-weight: 700;
@@ -146,24 +156,24 @@ h4 {
   line-height: 100%;
   margin: 16px 0 8px; }
 
-/* line 174, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 187, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 p {
   line-height: 150%;
   font-size: 16px;
   margin: 0 0 24px; }
 
-/* line 180, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 193, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 a {
   position: relative;
   cursor: pointer;
   text-decoration: none;
   color: #10100F;
   width: auto !important; }
-  /* line 187, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 200, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   a:hover {
     color: #10100F;
     text-decoration: none; }
-  /* line 192, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 205, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   a .underline {
     display: block;
     position: absolute;
@@ -173,21 +183,21 @@ a {
     height: 2px;
     background-color: #10100F; }
 
-/* line 204, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 217, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 ul.no-bullets {
   list-style-type: none;
   padding: 0;
   margin-top: 16px; }
 
-/* line 209, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 222, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 ul li {
   margin-bottom: 8px;
   font-size: 14px; }
-  /* line 213, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 226, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   ul li span {
     font-weight: 700; }
 
-/* line 219, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 232, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 button {
   border: none;
   background: #10100F;
@@ -196,14 +206,14 @@ button {
   color: #E9EDD8;
   padding: 5px 20px;
   cursor: pointer; }
-  /* line 228, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 241, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   button:hover {
     background: #0C978B;
     -webkit-transition: all 250ms ease-out;
     -moz-transition: all 250ms ease-out;
     -o-transition: all 250ms ease-out;
     transition: all 250ms ease-out; }
-  /* line 236, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 249, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   button:focus {
     box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
     outline: 0px;
@@ -213,12 +223,12 @@ button {
     transition: all 300ms ease-out; }
 
 /*FORM*/
-/* line 249, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 262, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 form label {
   display: flex;
   flex-direction: column;
   width: 100%; }
-  /* line 254, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 267, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   form label input, form label textarea {
     background: none;
     border: 1px solid #10100F;
@@ -226,7 +236,7 @@ form label {
     height: 40px;
     margin-top: 3px;
     padding: 1px 8px; }
-    /* line 262, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+    /* line 275, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
     form label input:focus, form label input:active, form label textarea:focus, form label textarea:active {
       border: 1px solid #0C978B;
       box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
@@ -235,12 +245,51 @@ form label {
       -moz-transition: all 300ms ease-out;
       -o-transition: all 300ms ease-out;
       transition: all 300ms ease-out; }
-  /* line 273, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 286, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   form label textarea {
     height: 80px; }
 
-/* line 278, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 291, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 form button {
   margin-top: 24px; }
+
+/*SOCIAL*/
+/* line 297, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+.social {
+  margin-top: 32px; }
+  /* line 299, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  .social p {
+    margin-bottom: 8px; }
+  /* line 303, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  .social .social-wrapper {
+    display: flex;
+    align-items: center; }
+    /* line 307, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+    .social .social-wrapper a {
+      margin-right: 16px;
+      height: 32px; }
+      /* line 311, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+      .social .social-wrapper a:focus {
+        border-radius: 4px;
+        box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+        outline: 0px;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out; }
+      /* line 323, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+      .social .social-wrapper a.insta:focus {
+        border-radius: 10px; }
+    /* line 329, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+    .social .social-wrapper .icon {
+      width: 32px;
+      height: auto; }
+      /* line 333, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+      .social .social-wrapper .icon:hover {
+        fill: #0C978B;
+        -webkit-transition: all 250ms ease-out;
+        -moz-transition: all 250ms ease-out;
+        -o-transition: all 250ms ease-out;
+        transition: all 250ms ease-out; }
 
 /*# sourceMappingURL=style.css.map */
