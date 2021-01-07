@@ -19,14 +19,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
                         autoplay: false
                     });
     
-    function labyrinthEnterAnim(element) {
+    function zoomAnim(element) {
         anime({
             targets: element,
             scale: 1.1
         });
     }
     
-    function labyrinthLeaveAnim(element) {
+    function leaveZoomAnim(element) {
         anime({
             targets: element,
             scale: 1
@@ -50,35 +50,41 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }, '+=1000');            
     }
     
-    let heart = document.querySelector(".heart");
+    /*HEAD ICON*/
     let head = document.querySelector(".head");
     
-    /*HEART ANIMATION*/
-    heart.addEventListener("mouseenter", function () {
-        labyrinthEnterAnim(this);
-    });
-    
-    heart.addEventListener("mouseleave", function () {
-        labyrinthLeaveAnim(this);
-    });
-    
-    heart.addEventListener("click", function () {
-        animPath('.heart path');
-        grainAnim.play();
-    });
-    
-    /*HEAD ANIMATION*/
     head.addEventListener("mouseenter", function () {
-        labyrinthEnterAnim(this);
+        zoomAnim(this);
     });
     
     head.addEventListener("mouseleave", function () {
-        labyrinthLeaveAnim(this);
+        leaveZoomAnim(this);
     });
     
     head.addEventListener("click", function () {
         animPath('.head path');
-        grainAnim.pause();
+
+        //toggle grain animation
+        if(grainAnim.paused){
+            grainAnim.play();    
+        } else {
+            grainAnim.pause();   
+        }     
+    });
+    
+    /*HEART ICON*/
+    let heart = document.querySelector(".heart");
+    
+    heart.addEventListener("mouseenter", function () {
+        zoomAnim(this);
+    });
+    
+    heart.addEventListener("mouseleave", function () {
+        leaveZoomAnim(this);
+    });
+    
+    heart.addEventListener("click", function () {
+        animPath('.heart path');               
     });
     
 /////////////////////////////////////////////////////////////////////
@@ -91,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     let seed = document.querySelector(".seed");
     
-    /*HEART ANIMATION*/
+    /*Seed ANIMATION*/
     seed.addEventListener("mouseenter", function () {
         anime({
             targets: this,

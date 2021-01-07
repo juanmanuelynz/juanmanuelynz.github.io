@@ -222,13 +222,31 @@ button {
     -o-transition: all 300ms ease-out;
     transition: all 300ms ease-out; }
 
+/*DRAWINGS*/
+/* line 261, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+.drawing-wrapper {
+  display: flex;
+  justify-content: center; }
+  /* line 266, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  .drawing-wrapper .drawing.about {
+    width: 50%;
+    margin: 16px 0 40px 0; }
+  /* line 271, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  .drawing-wrapper .drawing.now {
+    width: 85%;
+    margin: 16px 0 40px 0; }
+  /* line 276, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  .drawing-wrapper .drawing.contact {
+    width: 90%;
+    margin: 40px 0 0 0; }
+
 /*FORM*/
-/* line 262, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 286, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 form label {
   display: flex;
   flex-direction: column;
   width: 100%; }
-  /* line 267, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 291, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   form label input, form label textarea {
     background: none;
     border: 1px solid #10100F;
@@ -236,7 +254,7 @@ form label {
     height: 40px;
     margin-top: 3px;
     padding: 1px 8px; }
-    /* line 275, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+    /* line 299, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
     form label input:focus, form label input:active, form label textarea:focus, form label textarea:active {
       border: 1px solid #0C978B;
       box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
@@ -245,30 +263,30 @@ form label {
       -moz-transition: all 300ms ease-out;
       -o-transition: all 300ms ease-out;
       transition: all 300ms ease-out; }
-  /* line 286, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 310, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   form label textarea {
     height: 80px; }
 
-/* line 291, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 315, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 form button {
-  margin-top: 24px; }
+  margin: 16px 0 16px; }
 
 /*SOCIAL*/
-/* line 297, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+/* line 321, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
 .social {
   margin-top: 32px; }
-  /* line 299, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 323, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   .social p {
     margin-bottom: 8px; }
-  /* line 303, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+  /* line 327, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
   .social .social-wrapper {
     display: flex;
     align-items: center; }
-    /* line 307, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+    /* line 331, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
     .social .social-wrapper a {
       margin-right: 16px;
       height: 32px; }
-      /* line 311, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+      /* line 335, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
       .social .social-wrapper a:focus {
         border-radius: 4px;
         box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
@@ -277,14 +295,14 @@ form button {
         -moz-transition: all 300ms ease-out;
         -o-transition: all 300ms ease-out;
         transition: all 300ms ease-out; }
-      /* line 323, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+      /* line 347, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
       .social .social-wrapper a.insta:focus {
         border-radius: 10px; }
-    /* line 329, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+    /* line 353, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
     .social .social-wrapper .icon {
       width: 32px;
       height: auto; }
-      /* line 333, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
+      /* line 357, /Users/juanmanuelynz/Creative Cloud Files/Juan/website/css/style.scss */
       .social .social-wrapper .icon:hover {
         fill: #0C978B;
         -webkit-transition: all 250ms ease-out;

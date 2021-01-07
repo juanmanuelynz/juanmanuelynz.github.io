@@ -257,6 +257,30 @@ button {
     }
 }
 
+/*DRAWINGS*/
+.drawing-wrapper {
+    display: flex;
+    justify-content: center;
+    
+    .drawing {
+        &.about {
+            width: 50%;
+            margin: 16px 0 40px 0;
+        }
+        
+        &.now {
+            width: 85%;
+            margin: 16px 0 40px 0;
+        }
+        
+        &.contact {
+            width: 90%;
+            margin: 40px 0 0 0;
+        }
+    }
+}
+
+
 /*FORM*/
 form {
     label {
@@ -289,7 +313,7 @@ form {
     }
     
     button {
-        margin-top: 24px;
+        margin: 16px 0 16px;
     }
 }
 
