@@ -24,7 +24,7 @@ h1 {
   font-size: 90px;
   letter-spacing: -0.01em;
   line-height: 100%;
-  margin: 32px 0 8px;
+  margin: 0 0 8px;
 }
 
 h2 {
@@ -33,7 +33,7 @@ h2 {
   font-size: 60px;
   letter-spacing: -0.01em;
   line-height: 100%;
-  margin: 24px 0 8px;
+  margin: 0 0 8px;
 }
 
 h3 {
@@ -211,7 +211,7 @@ body {
     border: none;
     
     @media screen and (max-width: 990px) {
-        &[aria-expanded="true"]{
+        &[aria-expanded="true"], .collapsed{
           background-color: transparent;
         }
     }
