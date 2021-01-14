@@ -151,6 +151,10 @@ button {
     }
 }
 
+.align-end {
+    align-self: flex-end;
+}
+
 /* BODY - Background */
 #grain{
     z-index:-1;
@@ -392,7 +396,7 @@ button {
     .drawing {
         &.about {
             width: 100%;
-            margin: 8px 0 40px 0;
+            margin: 16px 0 0 0;
             
             @media screen and (max-width: 990px) {
                 width: 80%;
