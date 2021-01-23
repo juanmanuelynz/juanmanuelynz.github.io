@@ -305,67 +305,71 @@ button {
 /* line 363, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .logo {
   position: absolute;
-  left: 18px;
-  top: 18px;
-  width: 48px;
-  height: auto;
   z-index: 2000;
-  cursor: pointer; }
-  /* line 373, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .logo.heart {
-    top: auto;
+  cursor: pointer;
+  width: 48px;
+  height: auto; }
+  /* line 370, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  .logo.seed {
+    width: 27px;
+    bottom: 21px; }
+  /* line 375, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  .logo.primary {
+    top: 18px;
+    left: 18px; }
+  /* line 380, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  .logo.bottom-left {
+    left: 18px;
+    bottom: 18px; }
+  /* line 385, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  .logo.bottom-right {
+    right: 18px;
     bottom: 18px; }
 
-/* line 379, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-.particular {
-  position: absolute;
-  bottom: 21px;
-  right: 23px; }
-  /* line 384, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .particular .seed {
-    width: 27px;
-    height: auto; }
+/* line 393, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+a.icon-link {
+  display: contents; }
 
 /*DRAWINGS*/
-/* line 392, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 399, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .drawing-wrapper {
   display: flex;
   justify-content: center; }
-  /* line 397, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 404, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .drawing-wrapper .drawing.about {
     width: 100%;
     margin: 16px 0 0 0; }
     @media screen and (max-width: 990px) {
-      /* line 397, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 404, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .drawing-wrapper .drawing.about {
         width: 80%; } }
-  /* line 406, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 413, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .drawing-wrapper .drawing.now {
     width: 85%;
     margin: 16px 0 40px 0; }
-  /* line 411, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 418, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .drawing-wrapper .drawing.contact {
     width: 90%;
     margin: 40px 0 0 0; }
 
-/* line 418, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 425, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .profile {
   width: 100%;
   margin-top: 10%; }
   @media screen and (max-width: 990px) {
-    /* line 418, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 425, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     .profile {
       width: 70%;
       display: flex;
       margin: 0 auto; } }
 
 /*FORM*/
-/* line 432, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 439, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 form label {
   display: flex;
   flex-direction: column;
   width: 100%; }
-  /* line 437, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 444, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   form label input, form label textarea {
     background: none;
     border: 1px solid #10100F;
@@ -373,7 +377,7 @@ form label {
     height: 40px;
     margin-top: 3px;
     padding: 1px 8px; }
-    /* line 445, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 452, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     form label input:focus, form label input:active, form label textarea:focus, form label textarea:active {
       border: 1px solid #0C978B;
       box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
@@ -382,11 +386,11 @@ form label {
       -moz-transition: all 300ms ease-out;
       -o-transition: all 300ms ease-out;
       transition: all 300ms ease-out; }
-  /* line 456, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 463, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   form label textarea {
     height: 80px; }
 
-/* line 461, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 468, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 form button {
   margin: 16px 0 16px; }
 
