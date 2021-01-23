@@ -407,17 +407,27 @@ a.icon-link {
             
             @media screen and (max-width: 990px) {
                 width: 80%;
+                height: 80%;
             }
         }
         
         &.now {
             width: 85%;
             margin: 16px 0 40px 0;
+            
+            @media screen and (max-width: 990px) {
+                height: 85%;
+            }
         }
         
         &.contact {
             width: 90%;
             margin: 40px 0 0 0;
+            
+            @media screen and (max-width: 990px) {
+                height: 80%;
+                margin: 0 0 40px 0;
+            }
         }
     }
 }
