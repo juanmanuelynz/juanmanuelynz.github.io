@@ -216,6 +216,10 @@ button {
 .navbar {
     justify-content: flex-end;
     padding: 20px;
+    
+    @media screen and (max-width: 990px) {
+        padding: 16px;      
+    }
 }
 
 .navbar-light .navbar-toggler {
@@ -285,8 +289,9 @@ button {
         font-size: 20px;
         width: 100%;
         position: absolute;
-        top: 75px;
+        top: 64px;
         right: 0;
+        z-index: 1020;
         
         .navbar-nav {
             li {
@@ -362,15 +367,10 @@ button {
 
 .logo {
     position: absolute;
-    z-index: 2000;
+    z-index: 1000;
     cursor: pointer;
     width: 48px;
     height: auto;    
-    
-    &.seed {
-        width: 27px;
-        bottom: 21px;        
-    }
     
     &.primary {   
         top: 18px;
@@ -387,7 +387,14 @@ button {
         bottom: 18px;          
     }
     
+    &.seed {
+        width: 27px;
+        bottom: 21px;        
+    }
     
+    @media screen and (max-width: 990px) {
+        width: 40px;        
+    }    
 }
 
 a.icon-link {
