@@ -89,5 +89,20 @@
 
     <script src="../plugins/anime.min.js"></script>    
     <script src="../scripts/script.js" defer></script>
+    <script>
+      anime({
+            targets: '#grain',
+            keyframes: [
+                {backgroundPosition: '-1px bottom'},
+                {backgroundPosition: 'left .5px'}, 
+                {backgroundPosition: '0px top'}, 
+                {backgroundPosition: 'right -1px'}
+                ],
+            duration: 600,
+            easing: 'steps(4)',
+            loop: true,
+            autoplay: true
+        });
+    </script>
   </body>
 </html>
