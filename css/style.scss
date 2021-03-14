@@ -425,6 +425,16 @@ form {
         display: flex;
         align-items: center;
         
+        @media screen and (max-width: 768px) {
+            height: 70vh;
+            
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        
         .drawingWrapper {
             display: flex;
             justify-content: center;
