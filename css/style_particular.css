@@ -2,42 +2,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://use.typekit.net/tsq5whw.css");
 /* line 17, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
-.logo.head {
-  width: 40px;
-  position: relative; }
+.logo.seed {
+  top: 16px;
+  left: 48%; }
 
 /* line 24, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
+.container .row {
+  height: 100vh; }
+
+/* line 30, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
 #pointOfView {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%; }
 
-/* line 32, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
+/* line 38, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
 .ilus {
   position: absolute; }
-  /* line 35, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
+  /* line 41, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
   .ilus.kaat {
     left: 5%;
     bottom: 4%;
     width: 13%; }
-  /* line 41, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
+  /* line 47, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
   .ilus.samas {
     top: 23%;
     left: 6%;
     width: 30%; }
-  /* line 47, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
+  /* line 53, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
   .ilus.canoa {
     bottom: 27%;
     right: auto;
     left: 37%;
     width: 25%; }
-  /* line 54, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
+  /* line 60, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
   .ilus.orion {
     top: 27%;
     right: 9%;
     width: 20%; }
-  /* line 60, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
+  /* line 66, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style_particular.scss */
   .ilus.via {
     right: 5%;
     bottom: 8%;

@@ -62,14 +62,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     
     head.addEventListener("click", function () {
-        animPath('.head path');
-
-        //toggle grain animation
-        if(grainAnim.paused){
-            grainAnim.play();    
-        } else {
-            grainAnim.pause();   
-        }     
+        animPath('.head path');           
     });
     
     /*HEART ICON*/
@@ -84,7 +77,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     
     heart.addEventListener("click", function () {
-        animPath('.heart path');               
+        animPath('.heart path'); 
+        
+        //toggle grain animation
+        if(grainAnim.paused){
+            grainAnim.play();    
+        } else {
+            grainAnim.pause();   
+        }  
     });
     
 /////////////////////////////////////////////////////////////////////

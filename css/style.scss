@@ -23,8 +23,8 @@ body {
     padding: 18px;
     background-color: $color-whiteMana;
     width: 100%; 
-    height: 100vh;
-    overflow: hidden;
+//    height: 100vh;
+//    overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -49,6 +49,10 @@ h1 {
   line-height: 1.01470588em;
   letter-spacing: -0.01em;
   margin: 0 0 8px;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 3em;
+    }
 }
 
 h2 {
@@ -80,8 +84,16 @@ h4 {
 
 p {
   line-height: 150%;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 0 24px;
+
+    span {
+        color: $color-sonicSilver;
+    }
+    
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 a {
@@ -90,6 +102,8 @@ a {
     text-decoration: none;
     color: $color-black;  
     width: auto !important;
+    font-size: 18px;
+    font-weight: 600;
     
     &:hover {
         color: $color-black;
@@ -105,6 +119,10 @@ a {
         height: 2px;
         background-color: $color-black;
     }
+    
+     @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 ul {   
@@ -115,7 +133,7 @@ ul {
     }
     li {
         margin-bottom: 8px;
-        font-size: 14px;        
+        font-size: 16px;        
         
         span {
             font-weight: 700;
@@ -155,48 +173,6 @@ button {
     align-self: flex-end;
 }
 
-/* BODY - Background */
-#grain{
-    z-index:-1;
-    content:"";
-    position: absolute;
-//    width: 300vw;
-//    height: 310vh;        
-//    left: -50%;
-//    top: -50%;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    opacity: 0.18;
-    background-image: url('/assets/grain-black.png');  
-    background-repeat: repeat;
-}
-
-.container {
-    &.main {
-        height: 100%;
-        overflow: scroll;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        padding: 0 16px 0;
-    }    
-    
-    .side-col {
-        padding: 0 0 0 70px;
-        margin-top: 40px;
-        
-        @media screen and (max-width: 990px) {
-            padding: 0 16px;
-        }
-    }
-    
-    @media screen and (max-width: 990px) {
-        .path {
-            text-align: center;
-        }
-    }
-}
-
 //HIDE SCROLLBAR
 ::-webkit-scrollbar {
     width: 0px;
@@ -205,9 +181,9 @@ button {
 
 /* GUI */
 #gui {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
 }
@@ -215,7 +191,10 @@ button {
 /*NAV*/
 .navbar {
     justify-content: flex-end;
-    padding: 20px;
+    padding: 16px;
+//    background: rgba(239, 240, 235, 0.2);
+//    backdrop-filter: blur(6px);
+//    -webkit-backdrop-filter: blur(6px);
     
     @media screen and (max-width: 990px) {
         padding: 16px;      
@@ -240,6 +219,7 @@ button {
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     font-weight: 700;
+    color: $color-black;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -273,6 +253,11 @@ button {
         
         li {
             padding: 0 10px;
+            margin-bottom: 0;
+            
+            a {
+                font-size: 16px;
+            }
             
             &.social {
                 height: 40px;
@@ -284,14 +269,13 @@ button {
     
     @media screen and (max-width: 990px) {
         text-align: right;
-        background: $color-nepaliGreen;
+        background: $color-black;
         padding: 32px;
         font-size: 20px;
         width: 100%;
         position: absolute;
         top: 64px;
         right: 0;
-        z-index: 1020;
         
         .navbar-nav {
             li {
@@ -361,16 +345,12 @@ button {
 
 
 /* LOGO */
-#juan {
-  display:none; 
-}
-
 .logo {
-    position: absolute;
-    z-index: 1000;
+    position: fixed;
     cursor: pointer;
     width: 48px;
     height: auto;    
+    z-index: 1040;
     
     &.primary {   
         top: 18px;
@@ -389,7 +369,8 @@ button {
     
     &.seed {
         width: 27px;
-        bottom: 21px;        
+        bottom: 21px;   
+        fill: $color-black;
     }
     
     @media screen and (max-width: 990px) {
@@ -400,56 +381,6 @@ button {
 a.icon-link {
     display: contents;
 }
-
-
-/*DRAWINGS*/
-.drawing-wrapper {
-    display: flex;
-    justify-content: center;
-    
-    .drawing {
-        &.about {
-            width: 100%;
-            margin: 16px 0 0 0;
-            
-            @media screen and (max-width: 990px) {
-                width: 80%;
-                height: 80%;
-            }
-        }
-        
-        &.now {
-            width: 85%;
-            margin: 16px 0 40px 0;
-            
-            @media screen and (max-width: 990px) {
-                height: 85%;
-            }
-        }
-        
-        &.contact {
-            width: 90%;
-            margin: 40px 0 0 0;
-            
-            @media screen and (max-width: 990px) {
-                height: 80%;
-                margin: 0 0 40px 0;
-            }
-        }
-    }
-}
-
-.profile {
-    width: 100%;
-    margin-top: 10%;
-    
-    @media screen and (max-width: 990px) {
-        width: 70%;
-        display: flex;
-        margin: 0 auto;
-    }
-}
-
 
 /*FORM*/
 form {
@@ -487,11 +418,67 @@ form {
     }
 }
 
-#portfolio {
-    z-index: 2000;
+/* BODY - Background */
+.container {
+    .row {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        
+        .drawingWrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3vh;
+            
+            @media screen and (max-width: 768px) {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        
+        &.inner {
+            height: 100vh;
+            
+            div {
+                position: relative;
+                
+                p {
+                    color: $color-whiteMana;
+                }
+
+                .bkg {
+                    position: absolute;
+                    z-index: -1;
+                    left: -25vw;
+                    top: -5vh;
+                    
+                    @media screen and (max-width: 768px) {
+                        width: 160vw;
+                    }
+                }
+            }            
+        }
+        
+        &#contact, &.about {
+            height: 100vh;
+            
+            @media screen and (max-width: 768px) {
+                height: auto;
+                margin-bottom: 5vh;
+            }
+        }        
+    }
+}
+
+#grain{
+    z-index:-2;
+    content:"";
+    position: absolute;
     width: 100%;
-    height: 80%;
-    
-    border: none;
-    
+    height: 100%;
+    left: 0;
+    opacity: 0.18;
+    background-image: url('/assets/grain-black.png');  
+    background-repeat: repeat;
 }

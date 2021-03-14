@@ -14,9 +14,15 @@ $color-black: #10100F;
 $grid-gutter-width: 24px !default;
 
 .logo {
-    &.head {
-        width: 40px;
-        position: relative;
+    &.seed {
+        top: 16px;
+        left: 48%;
+    }
+}
+
+.container {
+    .row {
+        height: 100vh;
     }
 }
 
