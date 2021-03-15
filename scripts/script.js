@@ -171,7 +171,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // window load event makes sure image is 
     // loaded before running animation
     window.onload = function() {
-         
+         $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
     };
     
 });
