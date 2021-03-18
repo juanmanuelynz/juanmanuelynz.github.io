@@ -12,6 +12,7 @@ body {
   padding: 18px;
   background-color: #E9EDD8;
   width: 100%;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
