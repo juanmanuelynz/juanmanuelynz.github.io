@@ -93,6 +93,7 @@ p {
     
     @media screen and (max-width: 768px) {
         font-size: 16px;
+        padding: 0 16px;
     }
 }
 
@@ -420,6 +421,10 @@ form {
 
 /* BODY - Background */
 .container {
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+    
     .row {
         height: 80vh;
         display: flex;
@@ -448,7 +453,14 @@ form {
         }
         
         &.inner {
-            height: 100vh;
+            height: 100vh;            
+            
+            @media screen and (max-width: 768px) {
+                background: url("../assets/inner.svg") no-repeat;
+                background-position: center;
+                background-size: 160vw;
+                margin: 0 -18px;
+            }
             
             div {
                 position: relative;
@@ -456,15 +468,15 @@ form {
                 p {
                     color: $color-whiteMana;
                 }
-
+                
                 .bkg {
                     position: absolute;
                     z-index: -1;
                     left: -25vw;
-                    top: -5vh;
+                    top: -10vh;
                     
                     @media screen and (max-width: 768px) {
-                        width: 160vw;
+                        display: none;
                     }
                 }
             }            
@@ -477,7 +489,7 @@ form {
                 height: auto;
                 margin-bottom: 5vh;
             }
-        }        
+        }
     }
 }
 
