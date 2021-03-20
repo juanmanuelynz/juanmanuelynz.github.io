@@ -37,9 +37,10 @@ h1 {
   @media screen and (max-width: 768px) {
     /* line 45, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     h1 {
-      font-size: 3em; } }
+      font-size: 3em;
+      padding: 0 16px; } }
 
-/* line 58, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 59, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 h2 {
   font-family: kepler-std-subhead, serif;
   font-weight: 700;
@@ -48,7 +49,7 @@ h2 {
   letter-spacing: -0.01em;
   margin: 0 0 8px; }
 
-/* line 67, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 68, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 h3 {
   font-family: kepler-std-subhead, serif;
   font-weight: 700;
@@ -57,7 +58,7 @@ h3 {
   letter-spacing: -0.01em;
   margin: 0 0 8px; }
 
-/* line 76, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 77, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 h4 {
   font-family: 'Inter', helvetiva, sans-serif;
   font-weight: 700;
@@ -66,21 +67,21 @@ h4 {
   letter-spacing: -0.01em;
   margin: 0 0 8px; }
 
-/* line 85, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 86, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 p {
   line-height: 150%;
   font-size: 18px;
   margin: 0 0 24px; }
-  /* line 90, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 91, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   p span {
     color: #777777; }
   @media screen and (max-width: 768px) {
-    /* line 85, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 86, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     p {
       font-size: 16px;
       padding: 0 16px; } }
 
-/* line 100, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 101, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 a {
   position: relative;
   cursor: pointer;
@@ -89,11 +90,11 @@ a {
   width: auto !important;
   font-size: 18px;
   font-weight: 600; }
-  /* line 109, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 110, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   a:hover {
     color: #10100F;
     text-decoration: none; }
-  /* line 114, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 115, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   a .underline {
     display: block;
     position: absolute;
@@ -103,24 +104,24 @@ a {
     height: 2px;
     background-color: #10100F; }
   @media screen and (max-width: 768px) {
-    /* line 100, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 101, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     a {
-      font-size: 18px; } }
+      font-size: 16px; } }
 
-/* line 130, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 131, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 ul.no-bullets {
   list-style-type: none;
   padding: 0; }
 
-/* line 135, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 136, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 ul li {
   margin-bottom: 8px;
   font-size: 16px; }
-  /* line 139, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 140, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   ul li span {
     font-weight: 700; }
 
-/* line 145, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 146, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 button {
   border: none;
   background: #10100F;
@@ -129,14 +130,14 @@ button {
   color: #E9EDD8;
   padding: 5px 20px;
   cursor: pointer; }
-  /* line 154, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 155, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   button:hover {
     background: #0C978B;
     -webkit-transition: all 250ms ease-out;
     -moz-transition: all 250ms ease-out;
     -o-transition: all 250ms ease-out;
     transition: all 250ms ease-out; }
-  /* line 162, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 163, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   button:focus {
     box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
     outline: 0px;
@@ -145,18 +146,18 @@ button {
     -o-transition: all 300ms ease-out;
     transition: all 300ms ease-out; }
 
-/* line 173, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 174, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .align-end {
   align-self: flex-end; }
 
-/* line 178, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 179, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
   /* make scrollbar transparent */ }
 
 /* GUI */
-/* line 184, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 185, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 #gui {
   position: fixed;
   width: 100vw;
@@ -165,35 +166,35 @@ button {
   left: 0; }
 
 /*NAV*/
-/* line 193, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 194, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .navbar {
   justify-content: flex-end;
   padding: 16px; }
   @media screen and (max-width: 990px) {
-    /* line 193, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 194, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     .navbar {
       padding: 16px; } }
 
-/* line 205, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 206, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .navbar-light .navbar-toggler {
   color: #10100F;
   border: none; }
   @media screen and (max-width: 990px) {
-    /* line 205, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 206, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     .navbar-light .navbar-toggler {
       background-color: transparent; } }
 
-/* line 216, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 217, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .navbar-light .navbar-nav .nav-link {
   color: #10100F;
   font-weight: 400; }
 
-/* line 221, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 222, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   font-weight: 700;
   color: #10100F; }
 
-/* line 226, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 227, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .navbar-light .navbar-nav .nav-link:hover {
   color: #0C978B;
   -webkit-transition: all 250ms ease-out;
@@ -201,7 +202,7 @@ button {
   -o-transition: all 250ms ease-out;
   transition: all 250ms ease-out; }
 
-/* line 235, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 236, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .nav-link:focus {
   border-radius: 4px;
   box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
@@ -211,27 +212,27 @@ button {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out; }
 
-/* line 248, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 249, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .navbar-collapse {
   justify-content: flex-end; }
-  /* line 251, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 252, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .navbar-collapse .navbar-nav {
     display: flex;
     align-items: center; }
-    /* line 255, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 256, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     .navbar-collapse .navbar-nav li {
       padding: 0 10px;
       margin-bottom: 0; }
-      /* line 259, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 260, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .navbar-collapse .navbar-nav li a {
         font-size: 16px; }
-      /* line 263, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 264, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .navbar-collapse .navbar-nav li.social {
         height: 40px;
         display: flex;
         align-items: center; }
   @media screen and (max-width: 990px) {
-    /* line 248, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 249, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     .navbar-collapse {
       text-align: right;
       background: #10100F;
@@ -241,22 +242,22 @@ button {
       position: absolute;
       top: 64px;
       right: 0; }
-      /* line 282, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 283, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .navbar-collapse .navbar-nav li {
         padding: 5% 0; }
-        /* line 285, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+        /* line 286, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
         .navbar-collapse .navbar-nav li a {
           color: #E9EDD8 !important;
           font-size: 18px; }
-        /* line 290, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+        /* line 291, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
         .navbar-collapse .navbar-nav li.social {
           height: 60px; } }
 
 /*SOCIAL*/
-/* line 300, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 301, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .social a {
   height: 20px; }
-  /* line 303, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 304, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .social a:focus {
     border-radius: 4px;
     box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
@@ -265,15 +266,15 @@ button {
     -moz-transition: all 300ms ease-out;
     -o-transition: all 300ms ease-out;
     transition: all 300ms ease-out; }
-  /* line 315, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 316, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .social a.insta:focus {
     border-radius: 6px; }
 
-/* line 321, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 322, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .social .icon {
   width: 20px;
   height: auto; }
-  /* line 325, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 326, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .social .icon:hover {
     fill: #0C978B;
     -webkit-transition: all 250ms ease-out;
@@ -281,54 +282,59 @@ button {
     -o-transition: all 250ms ease-out;
     transition: all 250ms ease-out; }
   @media screen and (max-width: 990px) {
-    /* line 321, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 322, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     .social .icon {
       fill: #E9EDD8; }
-      /* line 336, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 337, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .social .icon:hover {
         fill: #FEE011; } }
 
 /* LOGO */
-/* line 349, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 350, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .logo {
   position: fixed;
   cursor: pointer;
   width: 48px;
   height: auto;
   z-index: 1040; }
-  /* line 356, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 357, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .logo.primary {
     top: 18px;
     left: 18px; }
-  /* line 361, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 362, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .logo.bottom-left {
     left: 18px;
     bottom: 18px; }
-  /* line 366, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 367, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .logo.bottom-right {
     right: 18px;
     bottom: 18px; }
-  /* line 371, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 372, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .logo.seed {
     width: 27px;
     bottom: 21px;
     fill: #10100F; }
   @media screen and (max-width: 990px) {
-    /* line 349, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 350, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     .logo {
       width: 40px; } }
 
-/* line 382, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 383, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 a.icon-link {
   display: contents; }
 
 /*FORM*/
-/* line 388, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+@media screen and (max-width: 768px) {
+  /* line 388, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  form {
+    padding: 0 16px; } }
+
+/* line 393, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 form label {
   display: flex;
   flex-direction: column;
   width: 100%; }
-  /* line 393, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 398, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   form label input, form label textarea {
     background: none;
     border: 1px solid #10100F;
@@ -336,7 +342,7 @@ form label {
     height: 40px;
     margin-top: 3px;
     padding: 1px 8px; }
-    /* line 401, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 406, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     form label input:focus, form label input:active, form label textarea:focus, form label textarea:active {
       border: 1px solid #0C978B;
       box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
@@ -345,79 +351,79 @@ form label {
       -moz-transition: all 300ms ease-out;
       -o-transition: all 300ms ease-out;
       transition: all 300ms ease-out; }
-  /* line 412, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 417, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   form label textarea {
     height: 80px; }
 
-/* line 417, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 422, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 form button {
   margin: 16px 0 16px; }
 
 /* BODY - Background */
 @media screen and (max-width: 768px) {
-  /* line 423, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 428, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .container {
     padding: 0; } }
 
-/* line 428, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 433, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .container .row {
   height: 80vh;
   display: flex;
   align-items: center; }
   @media screen and (max-width: 768px) {
-    /* line 428, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 433, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     .container .row {
       height: 70vh; }
-      /* line 436, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 441, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .container .row div {
         display: flex;
         flex-direction: column;
         justify-content: center; } }
-  /* line 443, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 448, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .container .row .drawingWrapper {
     display: flex;
     justify-content: center;
     margin-bottom: 3vh; }
     @media screen and (max-width: 768px) {
-      /* line 449, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 454, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .container .row .drawingWrapper img {
         width: 100%; } }
-  /* line 455, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 460, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .container .row.inner {
     height: 100vh; }
     @media screen and (max-width: 768px) {
-      /* line 455, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 460, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .container .row.inner {
         background: url("../assets/inner.svg") no-repeat;
         background-position: center;
         background-size: 160vw;
         margin: 0 -18px; } }
-    /* line 465, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+    /* line 470, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     .container .row.inner div {
       position: relative; }
-      /* line 468, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 473, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .container .row.inner div p {
         color: #E9EDD8; }
-      /* line 472, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 477, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .container .row.inner div .bkg {
         position: absolute;
         z-index: -1;
         left: -25vw;
         top: -10vh; }
         @media screen and (max-width: 768px) {
-          /* line 472, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+          /* line 477, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
           .container .row.inner div .bkg {
             display: none; } }
-  /* line 485, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 490, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .container .row#contact, .container .row.about {
     height: 100vh; }
     @media screen and (max-width: 768px) {
-      /* line 485, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 490, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .container .row#contact, .container .row.about {
         height: auto;
-        margin-bottom: 5vh; } }
+        margin-bottom: 7vh; } }
 
-/* line 496, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 501, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 #grain {
   z-index: -2;
   content: "";
