@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                         duration: 600,
                         easing: 'steps(4)',
                         loop: true,
-                        autoplay: false
+                        autoplay: true
                     });
     
     function zoomAnim(element) {
