@@ -384,7 +384,7 @@ form button {
     display: flex;
     justify-content: center;
     margin-bottom: 3vh; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1280px) {
       /* line 454, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .container .row .drawingWrapper img {
         width: 100%; } }
@@ -409,21 +409,22 @@ form button {
         position: absolute;
         z-index: -1;
         left: -25vw;
-        top: -10vh; }
+        top: -10vh;
+        height: 110vh; }
         @media screen and (max-width: 768px) {
           /* line 477, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
           .container .row.inner div .bkg {
             display: none; } }
-  /* line 490, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  /* line 491, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .container .row#contact, .container .row.about {
     height: 100vh; }
     @media screen and (max-width: 768px) {
-      /* line 490, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+      /* line 491, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
       .container .row#contact, .container .row.about {
         height: auto;
         margin-bottom: 7vh; } }
 
-/* line 501, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+/* line 502, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 #grain {
   z-index: -2;
   content: "";
