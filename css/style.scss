@@ -431,7 +431,7 @@ form {
     }
     
     .row {
-        height: 80vh;
+        height: 100vh;
         display: flex;
         align-items: center;
         
@@ -463,7 +463,7 @@ form {
             @media screen and (max-width: 768px) {
                 background: url("../assets/inner.svg") no-repeat;
                 background-position: center;
-                background-size: 160vw;
+                background-size: 200vw;
                 margin: 0 -18px;
             }
             
@@ -478,7 +478,7 @@ form {
                     position: absolute;
                     z-index: -1;
                     left: -25vw;
-                    top: -10vh;
+                    top: -5vh;
                     height: 110vh;
                     
                     @media screen and (max-width: 768px) {

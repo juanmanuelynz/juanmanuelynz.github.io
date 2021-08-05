@@ -367,7 +367,7 @@ form button {
 
 /* line 433, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .container .row {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center; }
   @media screen and (max-width: 768px) {
@@ -396,7 +396,7 @@ form button {
       .container .row.inner {
         background: url("../assets/inner.svg") no-repeat;
         background-position: center;
-        background-size: 160vw;
+        background-size: 200vw;
         margin: 0 -18px; } }
     /* line 470, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
     .container .row.inner div {
@@ -409,7 +409,7 @@ form button {
         position: absolute;
         z-index: -1;
         left: -25vw;
-        top: -10vh;
+        top: -5vh;
         height: 110vh; }
         @media screen and (max-width: 768px) {
           /* line 477, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
