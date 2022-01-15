@@ -98,6 +98,22 @@ p {
     }
 }
 
+ul {   
+    &.no-bullets {
+        list-style-type: none;
+        padding: 0;
+//        margin-top: 16px;
+    }
+    li {
+        margin-bottom: 8px;
+        font-size: 16px;        
+        
+        span {
+            font-weight: 700;
+        }        
+    }
+}
+
 a {
     position: relative;
     cursor: pointer;
@@ -127,32 +143,20 @@ a {
     }
 }
 
-ul {   
-    &.no-bullets {
-        list-style-type: none;
-        padding: 0;
-//        margin-top: 16px;
-    }
-    li {
-        margin-bottom: 8px;
-        font-size: 16px;        
-        
-        span {
-            font-weight: 700;
-        }        
-    }
-}
-
-button {
+button, 
+.button {
+    font-weight: 400;
+    font-size: 16px;
     border: none;
     background: $color-black;
     height: 40px;
     border-radius: 4px;
     color: $color-whiteMana;
-    padding: 5px 20px;
+    padding: 10px 20px;
     cursor: pointer;
     
     &:hover {
+        color: $color-whiteMana;
         background: $color-nepaliGreen;
         -webkit-transition: all 250ms ease-out;
         -moz-transition: all 250ms ease-out;
@@ -194,12 +198,19 @@ button {
 .navbar {
     justify-content: flex-end;
     padding: 16px;
-//    background: rgba(239, 240, 235, 0.2);
-//    backdrop-filter: blur(6px);
-//    -webkit-backdrop-filter: blur(6px);
     
     @media screen and (max-width: 990px) {
         padding: 16px;      
+    }
+    
+    .navbar-nav {
+        /*GLASS*/
+//        background: rgba(255, 255, 255, 0.18);    
+//        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        backdrop-filter: blur(4.2px);
+        -webkit-backdrop-filter: blur(4.2px);
+//        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 }
 
@@ -217,6 +228,7 @@ button {
 .navbar-light .navbar-nav .nav-link {
     color: $color-black;
     font-weight: 400;
+    padding: 0;
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
@@ -419,7 +431,7 @@ form {
         }
     }
     
-    button {
+    button, .button {
         margin: 16px 0 16px;
     }
 }
