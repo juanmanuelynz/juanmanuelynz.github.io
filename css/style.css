@@ -1,100 +1,123 @@
 /* FONT IMPORT */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://use.typekit.net/tsq5whw.css");
-/* line 16, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html, .root {
   font-size: 16px;
-  line-height: 23px; }
+  line-height: 23px;
+}
 
-/* line 21, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 body {
   position: relative;
   padding: 18px;
   background-color: #E9EDD8;
   width: 100%;
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Inter', helvetica, sans-serif;
   letter-spacing: -0.01em;
   font-size: 1em;
-  line-height: 1.4375em; }
+  line-height: 1.4375em;
+}
 
 /* TEXT */
-/* line 41, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 h1, h2, h3, h4, h5, h6, p {
-  color: #10100F; }
+  color: #10100F;
+}
 
-/* line 45, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 h1 {
-  font-family: kepler-std-subhead, serif;
+  font-family: alga, serif;
   font-weight: 700;
   font-size: 4.25em;
   line-height: 1.01470588em;
   letter-spacing: -0.01em;
-  margin: 0 0 8px; }
-  @media screen and (max-width: 768px) {
-    /* line 45, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    h1 {
-      font-size: 3em;
-      padding: 0 16px; } }
+  margin: 0 0 8px;
+}
 
-/* line 59, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+    padding: 0 16px;
+  }
+}
+
 h2 {
-  font-family: kepler-std-subhead, serif;
+  font-family: alga, serif;
   font-weight: 700;
   font-size: 2.625em;
   line-height: 1.0952381em;
   letter-spacing: -0.01em;
-  margin: 0 0 8px; }
+  margin: 0 0 8px;
+}
 
-/* line 68, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+@media screen and (max-width: 990px) {
+  h2 {
+    padding: 0 16px;
+  }
+}
+
 h3 {
-  font-family: kepler-std-subhead, serif;
+  font-family: alga, serif;
   font-weight: 700;
   font-size: 1.625em;
   line-height: 1.76923077em;
   letter-spacing: -0.01em;
-  margin: 0 0 8px; }
+  margin: 0 0 8px;
+}
 
-/* line 77, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 h4 {
   font-family: 'Inter', helvetiva, sans-serif;
   font-weight: 700;
   font-size: 1em;
   line-height: 1.4375em;
   letter-spacing: -0.01em;
-  margin: 0 0 8px; }
+  margin: 0 0 8px;
+}
 
-/* line 86, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 p {
   line-height: 150%;
   font-size: 18px;
-  margin: 0 0 24px; }
-  /* line 91, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  p span {
-    color: #777777; }
-  @media screen and (max-width: 768px) {
-    /* line 86, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    p {
-      font-size: 16px;
-      padding: 0 16px; } }
+  margin: 0 0 24px;
+}
 
-/* line 102, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+p span {
+  color: #777777;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 16px;
+    padding: 0 16px;
+  }
+}
+
 ul.no-bullets {
   list-style-type: none;
-  padding: 0; }
+  padding: 0;
+}
 
-/* line 107, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 ul li {
   margin-bottom: 8px;
-  font-size: 16px; }
-  /* line 111, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  ul li span {
-    font-weight: 700; }
+  font-size: 16px;
+}
 
-/* line 117, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+ul li span {
+  font-weight: 700;
+}
+
 a {
   position: relative;
   cursor: pointer;
@@ -102,26 +125,30 @@ a {
   color: #10100F;
   width: auto !important;
   font-size: 18px;
-  font-weight: 600; }
-  /* line 126, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  a:hover {
-    color: #10100F;
-    text-decoration: none; }
-  /* line 131, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  a .underline {
-    display: block;
-    position: absolute;
-    bottom: -1.8px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #10100F; }
-  @media screen and (max-width: 768px) {
-    /* line 117, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    a {
-      font-size: 16px; } }
+  font-weight: 600;
+}
 
-/* line 146, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+a:hover {
+  color: #10100F;
+  text-decoration: none;
+}
+
+a .underline {
+  display: block;
+  position: absolute;
+  bottom: -1.8px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #10100F;
+}
+
+@media screen and (max-width: 768px) {
+  a {
+    font-size: 16px;
+  }
+}
+
 button,
 .button {
   font-weight: 400;
@@ -132,312 +159,419 @@ button,
   border-radius: 4px;
   color: #E9EDD8;
   padding: 10px 20px;
-  cursor: pointer; }
-  /* line 158, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  button:hover,
-  .button:hover {
-    color: #E9EDD8;
-    background: #0C978B;
-    -webkit-transition: all 250ms ease-out;
-    -moz-transition: all 250ms ease-out;
-    -o-transition: all 250ms ease-out;
-    transition: all 250ms ease-out; }
-  /* line 167, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  button:focus,
-  .button:focus {
-    box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
-    outline: 0px;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    transition: all 300ms ease-out; }
+  cursor: pointer;
+  text-align: center;
+}
 
-/* line 178, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+@media screen and (max-width: 990px) {
+  button,
+  .button {
+    margin: 0 16px;
+  }
+}
+
+button:hover,
+.button:hover {
+  color: #E9EDD8;
+  background: #0C978B;
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+}
+
+button:focus,
+.button:focus {
+  -webkit-box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+          box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+  outline: 0px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
 .align-end {
-  align-self: flex-end; }
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
 
-/* line 183, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
-  /* make scrollbar transparent */ }
+  /* make scrollbar transparent */
+}
 
 /* GUI */
-/* line 189, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 #gui {
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
-  left: 0; }
+  left: 0;
+}
 
 /*NAV*/
-/* line 198, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .navbar {
-  justify-content: flex-end;
-  padding: 16px; }
-  @media screen and (max-width: 990px) {
-    /* line 198, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    .navbar {
-      padding: 16px; } }
-  /* line 206, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .navbar .navbar-nav {
-    /*GLASS*/
-    border-radius: 8px;
-    backdrop-filter: blur(4.2px);
-    -webkit-backdrop-filter: blur(4.2px); }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 16px;
+}
 
-/* line 217, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+@media screen and (max-width: 990px) {
+  .navbar {
+    padding: 16px;
+  }
+}
+
+.navbar .navbar-nav {
+  /*GLASS*/
+  border-radius: 8px;
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+}
+
+.navbar .nav-item .lang {
+  color: #10100F;
+  font-size: 14px;
+  padding: 2px 8px;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-color: #10100F;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar .nav-item .lang {
+    border-color: #E9EDD8;
+    color: #E9EDD8;
+  }
+}
+
+.navbar .nav-item .lang:hover {
+  color: #0C978B;
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+}
+
+.navbar .nav-item .lang:focus {
+  -webkit-box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+          box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+  outline: 0px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
 .navbar-light .navbar-toggler {
   color: #10100F;
-  border: none; }
-  @media screen and (max-width: 990px) {
-    /* line 217, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    .navbar-light .navbar-toggler {
-      background-color: transparent; } }
+  border: none;
+}
 
-/* line 228, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+@media screen and (max-width: 990px) {
+  .navbar-light .navbar-toggler {
+    background-color: transparent;
+  }
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #10100F;
   font-weight: 400;
-  padding: 0; }
+  padding: 0;
+}
 
-/* line 234, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   font-weight: 700;
-  color: #10100F; }
+  color: #10100F;
+}
 
-/* line 239, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .navbar-light .navbar-nav .nav-link:hover {
   color: #0C978B;
   -webkit-transition: all 250ms ease-out;
-  -moz-transition: all 250ms ease-out;
-  -o-transition: all 250ms ease-out;
-  transition: all 250ms ease-out; }
+  transition: all 250ms ease-out;
+}
 
-/* line 248, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .nav-link:focus {
   border-radius: 4px;
-  box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+  -webkit-box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+          box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
   outline: 0px;
   -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  transition: all 300ms ease-out; }
+  transition: all 300ms ease-out;
+}
 
-/* line 261, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .navbar-collapse {
-  justify-content: flex-end; }
-  /* line 264, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .navbar-collapse .navbar-nav {
-    display: flex;
-    align-items: center; }
-    /* line 268, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    .navbar-collapse .navbar-nav li {
-      padding: 0 10px;
-      margin-bottom: 0; }
-      /* line 272, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-      .navbar-collapse .navbar-nav li a {
-        font-size: 16px; }
-      /* line 276, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-      .navbar-collapse .navbar-nav li.social {
-        height: 40px;
-        display: flex;
-        align-items: center; }
-  @media screen and (max-width: 990px) {
-    /* line 261, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    .navbar-collapse {
-      text-align: right;
-      background: #10100F;
-      padding: 32px;
-      font-size: 20px;
-      width: 100%;
-      position: absolute;
-      top: 64px;
-      right: 0; }
-      /* line 295, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-      .navbar-collapse .navbar-nav li {
-        padding: 5% 0; }
-        /* line 298, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-        .navbar-collapse .navbar-nav li a {
-          color: #E9EDD8 !important;
-          font-size: 18px; }
-        /* line 303, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-        .navbar-collapse .navbar-nav li.social {
-          height: 60px; } }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar-collapse .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-collapse .navbar-nav li {
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+
+.navbar-collapse .navbar-nav li a {
+  font-size: 16px;
+}
+
+.navbar-collapse .navbar-nav li.social {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-collapse {
+    text-align: right;
+    background: #10100F;
+    padding: 32px;
+    font-size: 20px;
+    width: 100%;
+    position: absolute;
+    top: 64px;
+    right: 0;
+  }
+  .navbar-collapse .navbar-nav li {
+    padding: 5% 0;
+  }
+  .navbar-collapse .navbar-nav li a {
+    color: #E9EDD8 !important;
+    font-size: 18px;
+  }
+  .navbar-collapse .navbar-nav li.social {
+    height: 60px;
+  }
+}
 
 /*SOCIAL*/
-/* line 313, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .social a {
-  height: 20px; }
-  /* line 316, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .social a:focus {
-    border-radius: 4px;
-    box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
-    outline: 0px;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    transition: all 300ms ease-out; }
-  /* line 328, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .social a.insta:focus {
-    border-radius: 6px; }
+  height: 20px;
+}
 
-/* line 334, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+.social a:focus {
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+          box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+  outline: 0px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.social a.insta:focus {
+  border-radius: 6px;
+}
+
 .social .icon {
   width: 20px;
-  height: auto; }
-  /* line 338, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+  height: auto;
+}
+
+.social .icon:hover {
+  fill: #0C978B;
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+}
+
+@media screen and (max-width: 990px) {
+  .social .icon {
+    fill: #E9EDD8;
+  }
   .social .icon:hover {
-    fill: #0C978B;
-    -webkit-transition: all 250ms ease-out;
-    -moz-transition: all 250ms ease-out;
-    -o-transition: all 250ms ease-out;
-    transition: all 250ms ease-out; }
-  @media screen and (max-width: 990px) {
-    /* line 334, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    .social .icon {
-      fill: #E9EDD8; }
-      /* line 349, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-      .social .icon:hover {
-        fill: #FEE011; } }
+    fill: #FEE011;
+  }
+}
 
 /* LOGO */
-/* line 362, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .logo {
   position: fixed;
   cursor: pointer;
   width: 48px;
   height: auto;
-  z-index: 1040; }
-  /* line 369, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .logo.primary {
-    top: 18px;
-    left: 18px; }
-  /* line 374, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .logo.bottom-left {
-    left: 18px;
-    bottom: 18px; }
-  /* line 379, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .logo.bottom-right {
-    right: 18px;
-    bottom: 18px; }
-  /* line 384, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .logo.seed {
-    width: 27px;
-    bottom: 21px;
-    fill: #10100F; }
-  @media screen and (max-width: 990px) {
-    /* line 362, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    .logo {
-      width: 40px; } }
+  z-index: 1040;
+}
 
-/* line 395, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+.logo.primary {
+  top: 18px;
+  left: 18px;
+}
+
+.logo.bottom-left {
+  left: 18px;
+  bottom: 18px;
+}
+
+.logo.bottom-right {
+  right: 18px;
+  bottom: 18px;
+}
+
+.logo.seed {
+  width: 27px;
+  bottom: 21px;
+  fill: #10100F;
+}
+
+@media screen and (max-width: 990px) {
+  .logo {
+    width: 40px;
+  }
+}
+
 a.icon-link {
-  display: contents; }
+  display: contents;
+}
 
 /*FORM*/
 @media screen and (max-width: 768px) {
-  /* line 400, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   form {
-    padding: 0 16px; } }
+    padding: 0 16px;
+  }
+}
 
-/* line 405, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  width: 100%; }
-  /* line 410, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  form label input, form label textarea {
-    background: none;
-    border: 1px solid #10100F;
-    border-radius: 4px;
-    height: 40px;
-    margin-top: 3px;
-    padding: 1px 8px; }
-    /* line 418, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    form label input:focus, form label input:active, form label textarea:focus, form label textarea:active {
-      border: 1px solid #0C978B;
-      box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
-      outline: 0px;
-      -webkit-transition: all 300ms ease-out;
-      -moz-transition: all 300ms ease-out;
-      -o-transition: all 300ms ease-out;
-      transition: all 300ms ease-out; }
-  /* line 429, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  form label textarea {
-    height: 80px; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
 
-/* line 434, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+form label input, form label textarea {
+  background: none;
+  border: 1px solid #10100F;
+  border-radius: 4px;
+  height: 40px;
+  margin-top: 3px;
+  padding: 1px 8px;
+}
+
+form label input:focus, form label input:active, form label textarea:focus, form label textarea:active {
+  border: 1px solid #0C978B;
+  -webkit-box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+          box-shadow: rgba(12, 151, 139, 0.3) 0px 0px 0px 4px;
+  outline: 0px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+form label textarea {
+  height: 80px;
+}
+
 form button, form .button {
-  margin: 16px 0 16px; }
+  margin: 16px 0 16px;
+}
 
 /* BODY - Background */
 @media screen and (max-width: 768px) {
-  /* line 440, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
   .container {
-    padding: 0; } }
+    padding: 0;
+  }
+}
 
-/* line 445, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
 .container .row {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; }
-  @media screen and (max-width: 768px) {
-    /* line 445, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    .container .row {
-      height: 70vh; }
-      /* line 453, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-      .container .row div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; } }
-  /* line 460, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .container .row .drawingWrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3vh; }
-    @media screen and (max-width: 1280px) {
-      /* line 466, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-      .container .row .drawingWrapper img {
-        width: 100%; } }
-  /* line 472, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .container .row.inner {
-    height: 100vh; }
-    @media screen and (max-width: 768px) {
-      /* line 472, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-      .container .row.inner {
-        background: url("../assets/inner.svg") no-repeat;
-        background-position: center;
-        background-size: 200vw;
-        margin: 0 -18px; } }
-    /* line 482, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-    .container .row.inner div {
-      position: relative; }
-      /* line 485, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-      .container .row.inner div p {
-        color: #E9EDD8; }
-      /* line 489, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-      .container .row.inner div .bkg {
-        position: absolute;
-        z-index: -1;
-        left: -25vw;
-        top: -5vh;
-        height: 110vh; }
-        @media screen and (max-width: 768px) {
-          /* line 489, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-          .container .row.inner div .bkg {
-            display: none; } }
-  /* line 503, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-  .container .row#contact, .container .row.about {
-    height: 100vh; }
-    @media screen and (max-width: 768px) {
-      /* line 503, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
-      .container .row#contact, .container .row.about {
-        height: auto;
-        margin-bottom: 7vh; } }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-/* line 514, /Users/juanmanuelynz/Creative Cloud Files/Juan/juanmanuelynz.github.io/css/style.scss */
+@media screen and (max-width: 768px) {
+  .container .row {
+    height: 70vh;
+  }
+  .container .row div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.container .row .drawingWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3vh;
+}
+
+@media screen and (max-width: 1280px) {
+  .container .row .drawingWrapper img {
+    width: 100%;
+  }
+}
+
+.container .row.inner {
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .container .row.inner {
+    background: url("../assets/inner.svg") no-repeat;
+    background-position: center;
+    background-size: 200vw;
+    margin: 0 -18px;
+  }
+}
+
+.container .row.inner div {
+  position: relative;
+}
+
+.container .row.inner div p {
+  color: #E9EDD8;
+}
+
+.container .row.inner div .bkg {
+  position: absolute;
+  z-index: -1;
+  left: -25vw;
+  top: -5vh;
+  height: 110vh;
+}
+
+@media screen and (max-width: 768px) {
+  .container .row.inner div .bkg {
+    display: none;
+  }
+}
+
+.container .row#contact, .container .row.about {
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .container .row#contact, .container .row.about {
+    height: auto;
+    margin-bottom: 7vh;
+  }
+}
+
 #grain {
   z-index: -2;
   content: "";
@@ -447,6 +581,6 @@ form button, form .button {
   left: 0;
   opacity: 0.18;
   background-image: url("/assets/grain-black.png");
-  background-repeat: repeat; }
-
+  background-repeat: repeat;
+}
 /*# sourceMappingURL=style.css.map */

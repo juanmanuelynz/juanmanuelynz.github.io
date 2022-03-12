@@ -12,283 +12,270 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
     <link rel="stylesheet" href="/css/style.css">
     
+    <!-- This is Vue -->
+	<script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/vue-i18n@9"></script>
+
   </head>  
     
   <body>
-<!--    <div id="gui">-->
-        <svg class="logo head primary" width="283" height="264" viewBox="0 0 283 264" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M160.8 218.6C160.8 218.6 237.9 226.6 237.9 141.5C237.9 88.2 194.7 45.1 141.5 45.1C88.3 45.1 45.1 88.3 45.1 141.5C45.1 162.8 62.4 180.1 83.7 180.1H160.8C182.1 180.1 199.4 162.8 199.4 141.5C199.4 109.5 173.5 83.6 141.5 83.6C109.5 83.6 83.6 109.5 83.6 141.5" stroke="#10100F" stroke-width="13" stroke-miterlimit="10" stroke-linecap="round" style="stroke-dashoffset: 0px;"/>
-            <path d="M83.6 218.6C41 218.6 6.5 184.1 6.5 141.5C6.5 66.9 66.9 6.5 141.5 6.5C216.1 6.5 276.5 66.9 276.5 141.5C276.5 263.1 160.8 257.4 160.8 257.4C139.5 257.4 122.2 240.1 122.2 218.8V218.6V141.5C122.2 130.8 130.9 122.2 141.5 122.2C152.2 122.2 160.8 130.8 160.8 141.5" stroke="#10100F" stroke-width="13" stroke-miterlimit="10" stroke-linecap="round" style="stroke-dashoffset: 0px;"/>
-        </svg>
-        
-        <svg class="logo heart bottom-left" width="283" height="264" viewBox="0 0 283 264" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M122.2 45.3418C122.2 45.3418 45.1 37.3418 45.1 122.442C45.1 175.742 88.3 218.842 141.5 218.842C194.7 218.842 237.9 175.642 237.9 122.442C237.9 101.142 220.6 83.8419 199.3 83.8419L122.2 83.8418C100.9 83.8418 83.6 101.142 83.6 122.442C83.6 154.442 109.5 180.342 141.5 180.342C173.5 180.342 199.4 154.442 199.4 122.442" stroke="#10100F" stroke-width="13" stroke-miterlimit="10" stroke-linecap="round"/>
-            <path d="M199.4 45.3419C242 45.3419 276.5 79.8419 276.5 122.442C276.5 197.042 216.1 257.442 141.5 257.442C66.9 257.442 6.50001 197.042 6.50001 122.442C6.50002 0.841842 122.2 6.54186 122.2 6.54186C143.5 6.54186 160.8 23.8419 160.8 45.1419L160.8 45.3418L160.8 122.442C160.8 133.142 152.1 141.742 141.5 141.742C130.8 141.742 122.2 133.142 122.2 122.442" stroke="#10100F" stroke-width="13" stroke-miterlimit="10" stroke-linecap="round"/>
-        </svg>
-
-        <a href="https://algoparticular.com" target="_blank" class="icon-link">
-            <svg class="logo seed bottom-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 56">
-                <path class="a" d="M27.93,43.12v-8c-.13-3.81-.4-4.08-4.15-3.95C17.31,31.41,5.34,33.19,3,33.18A2.85,2.85,0,0,1,.28,31.41a2.83,2.83,0,0,1,.55-3.2,8.84,8.84,0,0,1,7.08-2.93,126,126,0,0,0,13.42-.89c5.79-.61,5.79-.61,5.79-6.54,0-3.06-.75-6-1.16-9.06a19.41,19.41,0,0,1-.27-5A4.09,4.09,0,0,1,29.43.35C31.14.48,32.16,1.64,32.5,4c.41,4.83.75,9.6.88,14.3,0,4.36.14,4.36,4.36,4.36,4.91,0,12.74.13,17.51.13,2,0,3.74,1.3,3.74,2.8s-1.18,5-4.15,4.63c-5.85-1.21-13.35,0-18.66-.14-1.91,0-2.46.75-2.32,2.45.27,6,.41,11.11.89,17A4.28,4.28,0,0,1,32.57,54c-2.32,1.29-4.64.14-4.77-2.66C27.8,49,27.8,46.05,27.93,43.12Z"/>
-                <path class="a" d="M49.05,49.52c.27-2.45,2.18-4.36,4.36-4.22a3.76,3.76,0,0,1,3.47,4.09,4.9,4.9,0,0,1-4.63,4.08A3.68,3.68,0,0,1,49.05,49.52Z"/>
-                <path class="a" d="M11.32,6.55C11.32,8,8.59,10.63,7,10.77A3.69,3.69,0,0,1,3.35,7.09C3.48,4.91,5.53,2.6,7.09,2.6,9,2.8,11.32,5,11.32,6.55Z"/>
-                <path class="a" d="M48.09,4.5C48.23,1.57,49.8-.13,52.45,0a3.5,3.5,0,0,1,3.07,3.47c-.14,2.18-2.32,4.63-4.16,4.63S48.09,6.68,48.09,4.5Z"/>
-                <path class="a" d="M8.73,56a2.84,2.84,0,0,1-2.86-3.2A4.64,4.64,0,0,1,10.5,48.3a3.5,3.5,0,0,1,3.06,3.33A5,5,0,0,1,8.73,56Z"/>
+      <div id="app">
+            <svg class="logo head primary" v-on:mouseenter="zoomAnim" v-on:mouseleave="leaveZoomAnim" v-on:click="animPath('.head path')" width="283" height="264" viewBox="0 0 283 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M160.8 218.6C160.8 218.6 237.9 226.6 237.9 141.5C237.9 88.2 194.7 45.1 141.5 45.1C88.3 45.1 45.1 88.3 45.1 141.5C45.1 162.8 62.4 180.1 83.7 180.1H160.8C182.1 180.1 199.4 162.8 199.4 141.5C199.4 109.5 173.5 83.6 141.5 83.6C109.5 83.6 83.6 109.5 83.6 141.5" stroke="#10100F" stroke-width="13" stroke-miterlimit="10" stroke-linecap="round" style="stroke-dashoffset: 0px;"/>
+                <path d="M83.6 218.6C41 218.6 6.5 184.1 6.5 141.5C6.5 66.9 66.9 6.5 141.5 6.5C216.1 6.5 276.5 66.9 276.5 141.5C276.5 263.1 160.8 257.4 160.8 257.4C139.5 257.4 122.2 240.1 122.2 218.8V218.6V141.5C122.2 130.8 130.9 122.2 141.5 122.2C152.2 122.2 160.8 130.8 160.8 141.5" stroke="#10100F" stroke-width="13" stroke-miterlimit="10" stroke-linecap="round" style="stroke-dashoffset: 0px;"/>
             </svg>
-        </a>
+            
+            <svg class="logo heart bottom-left" v-on:mouseenter="zoomAnim" v-on:mouseleave="leaveZoomAnim" v-on:click="animPath('.heart path')" width="283" height="264" viewBox="0 0 283 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M122.2 45.3418C122.2 45.3418 45.1 37.3418 45.1 122.442C45.1 175.742 88.3 218.842 141.5 218.842C194.7 218.842 237.9 175.642 237.9 122.442C237.9 101.142 220.6 83.8419 199.3 83.8419L122.2 83.8418C100.9 83.8418 83.6 101.142 83.6 122.442C83.6 154.442 109.5 180.342 141.5 180.342C173.5 180.342 199.4 154.442 199.4 122.442" stroke="#10100F" stroke-width="13" stroke-miterlimit="10" stroke-linecap="round"/>
+                <path d="M199.4 45.3419C242 45.3419 276.5 79.8419 276.5 122.442C276.5 197.042 216.1 257.442 141.5 257.442C66.9 257.442 6.50001 197.042 6.50001 122.442C6.50002 0.841842 122.2 6.54186 122.2 6.54186C143.5 6.54186 160.8 23.8419 160.8 45.1419L160.8 45.3418L160.8 122.442C160.8 133.142 152.1 141.742 141.5 141.742C130.8 141.742 122.2 133.142 122.2 122.442" stroke="#10100F" stroke-width="13" stroke-miterlimit="10" stroke-linecap="round"/>
+            </svg>
 
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a href="https://algoparticular.com" target="_blank" class="icon-link">
+                <svg class="logo seed bottom-right" v-on:mouseenter="zoomAnim" v-on:mouseleave="leaveZoomAnim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 56">
+                    <path class="a" d="M27.93,43.12v-8c-.13-3.81-.4-4.08-4.15-3.95C17.31,31.41,5.34,33.19,3,33.18A2.85,2.85,0,0,1,.28,31.41a2.83,2.83,0,0,1,.55-3.2,8.84,8.84,0,0,1,7.08-2.93,126,126,0,0,0,13.42-.89c5.79-.61,5.79-.61,5.79-6.54,0-3.06-.75-6-1.16-9.06a19.41,19.41,0,0,1-.27-5A4.09,4.09,0,0,1,29.43.35C31.14.48,32.16,1.64,32.5,4c.41,4.83.75,9.6.88,14.3,0,4.36.14,4.36,4.36,4.36,4.91,0,12.74.13,17.51.13,2,0,3.74,1.3,3.74,2.8s-1.18,5-4.15,4.63c-5.85-1.21-13.35,0-18.66-.14-1.91,0-2.46.75-2.32,2.45.27,6,.41,11.11.89,17A4.28,4.28,0,0,1,32.57,54c-2.32,1.29-4.64.14-4.77-2.66C27.8,49,27.8,46.05,27.93,43.12Z"/>
+                    <path class="a" d="M49.05,49.52c.27-2.45,2.18-4.36,4.36-4.22a3.76,3.76,0,0,1,3.47,4.09,4.9,4.9,0,0,1-4.63,4.08A3.68,3.68,0,0,1,49.05,49.52Z"/>
+                    <path class="a" d="M11.32,6.55C11.32,8,8.59,10.63,7,10.77A3.69,3.69,0,0,1,3.35,7.09C3.48,4.91,5.53,2.6,7.09,2.6,9,2.8,11.32,5,11.32,6.55Z"/>
+                    <path class="a" d="M48.09,4.5C48.23,1.57,49.8-.13,52.45,0a3.5,3.5,0,0,1,3.07,3.47c-.14,2.18-2.32,4.63-4.16,4.63S48.09,6.68,48.09,4.5Z"/>
+                    <path class="a" d="M8.73,56a2.84,2.84,0,0,1-2.86-3.2A4.64,4.64,0,0,1,10.5,48.3a3.5,3.5,0,0,1,3.06,3.33A5,5,0,0,1,8.73,56Z"/>
+                </svg>
+            </a>
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#intro">Hello <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="social">
-                        <a class="li" href="https://www.linkedin.com/in/juanmanuelyanez" target="_blank">                        
-                            <svg class="icon linkedin" xmlns="http://www.w3.org/2000/svg" fill="#10100F" viewBox="0 0 512 512" xml:space="preserve">
-                            <path d="M475.4,0h-439C16.3,0,0,16.6,0,36.9v438.2C0,495.4,16.3,512,36.5,512h439c20.1,0,36.6-16.6,36.6-36.9V36.9
-                                C512,16.6,495.5,0,475.4,0z M154.7,438.9H78.9V194.5h76v244.3H154.7z M116.8,161.1c-24.3,0-44-19.8-44-44s19.7-44,44-44
-                                c24.2,0,44,19.8,44,44C160.8,141.5,141.1,161.1,116.8,161.1z M439.2,438.9h-75.9V320c0-28.3-0.6-64.8-39.4-64.8
-                                c-39.5,0-45.6,30.9-45.6,62.7v120.9h-75.9V194.5h72.8v33.4h1c10.2-19.2,35-39.4,71.9-39.4c76.8,0,91.1,50.6,91.1,116.5V438.9z"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social">
-                        <a class="insta" href="https://instagram.com/juanmanuelynz" target="_blank">
-                            <svg class="icon instagram" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 551.034 551.034" xml:space="preserve" fill="#10100F">
-                                <path d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722 c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156 C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156 c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722 c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"/>
-                                <path d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z"/>
-                                <circle cx="418.306" cy="134.072" r="34.149"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index_es.html">"Ups, no hablo Inglés"</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>  
-<!--    </div>  -->
-      
-    <div class="container">
-        <div id="intro" class="row justify-content-md-center">
-            <div class="col-lg-5 col-sm-12">
-                <h1 class="">Hola, soy Juan</h1>
-                <p class="">
-                Human being, curious designer and digital creator.<br>A resourceful kind of person who loves to research, ideate and develop solutions.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-start">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_01.svg" />
-                </div>
-                <p class="">
-                I have been working in different fields, from programming to visual and product design, going through project management.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-end">
-            <div class="col-lg-5 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_02.svg" />
-                </div>
-                <p class="">
-                I support projects combining research and systemic curiosity with trained instinct.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-start">
-            <div class="col-lg-4 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_03.svg" />
-                </div>
-                <p class="">
-                    First of all, I can say that I am a Human... 
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-end">
-            <div class="col-lg-5 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_04.svg" />
-                </div>
-                <p class="">
-                Sure I'm not an evolved jellyfish or a talking eggplant, but before anything else... I'm a Human with capital H, or at least I try to be one.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-start inner">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_05.svg" />
-                </div>
-                <p class="">
-                Being a true Human demands self-discovery as the number one priority in life, a path that makes us aware of our light and present us the opportunity to embrace our darkness.
-                </p>
-                
-                <img class="bkg" src="assets/inner.svg"/>
-            </div>            
-        </div>
-        
-        <div class="row justify-content-md-end">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_06.svg" />
-                </div>
-                <p class="">
-                I am a genuine being, with honest listening skills, lover of life. Happy by nature, curious and hungry for all kinds of knowledge.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-start">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_07.svg" />
-                </div>
-                <p class="">
-                Gardening, illustration, cooking <span>/*and eating*/</span> are my passions. I find inspiration in vulnerability, in philosophy and theosophy, in sacred geometry and anthropological symbolisms.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-end">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_08.svg" />
-                </div>
-                <p class="">
-                So, professionally speaking, I started my career as a Back-end developer but quickly finding in Front-end the possibility of creating visual impact. That search led me to delve into the audiovisual world and Product Design.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-start">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_09.svg" />
-                </div>
-                <p class="">
-                Thanks to this broad perspective, I feed my intuition and search for beauty with mathematics and logic, I am detail-oriented with a pixel vision.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-end">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_10.svg" />
-                </div>
-                <p class="">
-                I’ve developed and designed enterprise solutions, websites, videogames, tools and web apps for several industries.<br>Also I’ve co-founded 2 startups, I've participated and succeded in Start-Up Chile and its sequel Scale-Up, and I have been part of Seedstars World community in Latam &amp; Switzerland.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-start">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_11.svg" />
-                </div>
-                <p class="">
-                And now, Adventure calls!<br>In the middle of the weird 2020, my partner and I decided to shake our lives and move from the very South (Buenos Aires, Argentina) to the very North (Tallinn, Estonia).
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-end">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_12.svg" />
-                </div>
-                <p class="">
-                In this new context and joining forces with an old good friend, I'm back in the <a class="link" href="https://samasama.studio" target="_blank">studio<span class="underline"></span></a>, creating playful and digital experiences.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-start">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_13.svg" />
-                </div>
-                <p class="">
-                Sama Sama is co-creating with <a class="link" href="https://codesters.club" target="_blank">codesters.club<span class="underline"></span></a> a program for mentoring +250 youngsters in 7 Estonian secondary schools, through the process of creating, designing and developing digital products.                
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-end">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_14.svg" />
-                </div>
-                <p class="">
-                In parallel, I continue exploring and creating this illustrated Universe that I've called "Algo Particular" (Something Particular), a tool for sharing my point of view of Life and what it means to me, to be Alive.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row justify-content-md-start">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="assets/ilus_15.svg" />
-                </div>
-                <p class="">
-                With very simple characters and situations, and the Hermetic premise "As above, so below", I'm trying to tell my truth: we are all the same, we are all one, we are (not from) here.
-                </p>
-            </div>
-        </div>
-        
-        
-        <!--   CONTACT     -->
-        <div id="contact" class="row justify-content-md-center">
-            <div class="col-lg-6 col-sm-12">
-                <div class="drawingWrapper">
-                    <img src="/assets/ilus_contact.svg"/>
-                </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <h1 class="">Let's be in contact</h1>
-                <p class="">
-                  If I can support you in any way, be useful to your project or you just want to meet, feel free to contact me.                   
-                  Please, provide any information you might think would be helpful.     
-                </p>
-                <a class="button" href="mailto:juanmanuelynz@gmail.com?subject=Hello Juan!">Send message</a>                
-                
-                <!--<form action="https://formspree.io/f/mdopyadp" method="POST">
-                    <label>
-                        Your name
-                        <input type="text" name="name">
-                    </label>  
-                    <label>
-                        Your email
-                        <input type="email" name="_replyto">
-                    </label>
-                    <label>
-                        Your message
-                        <textarea name="message"></textarea>
-                    </label>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <button type="submit">Send message</button>
-                </form>-->
-            </div>            
-        </div>
-    </div>  
-
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#intro">{{ $t("message.hello") }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">{{ $t("message.contact") }}</a>
+                        </li>
+                        <li class="social">
+                            <a class="li" href="https://www.linkedin.com/in/juanmanuelyanez" target="_blank">                        
+                                <svg class="icon linkedin" xmlns="http://www.w3.org/2000/svg" fill="#10100F" viewBox="0 0 512 512" xml:space="preserve">
+                                <path d="M475.4,0h-439C16.3,0,0,16.6,0,36.9v438.2C0,495.4,16.3,512,36.5,512h439c20.1,0,36.6-16.6,36.6-36.9V36.9
+                                    C512,16.6,495.5,0,475.4,0z M154.7,438.9H78.9V194.5h76v244.3H154.7z M116.8,161.1c-24.3,0-44-19.8-44-44s19.7-44,44-44
+                                    c24.2,0,44,19.8,44,44C160.8,141.5,141.1,161.1,116.8,161.1z M439.2,438.9h-75.9V320c0-28.3-0.6-64.8-39.4-64.8
+                                    c-39.5,0-45.6,30.9-45.6,62.7v120.9h-75.9V194.5h72.8v33.4h1c10.2-19.2,35-39.4,71.9-39.4c76.8,0,91.1,50.6,91.1,116.5V438.9z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a class="insta" href="https://instagram.com/juanmanuelynz" target="_blank">
+                                <svg class="icon instagram" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 551.034 551.034" xml:space="preserve" fill="#10100F">
+                                    <path d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722 c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156 C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156 c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722 c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"/>
+                                    <path d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z"/>
+                                    <circle cx="418.306" cy="134.072" r="34.149"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <select class="lang" v-model="$i18n.locale">
+                                <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale.toUpperCase() }}</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+        <div class="container">
+            <div id="intro" class="row justify-content-md-center">
+                <div class="col-lg-5 col-sm-12">
+                    <h1 class="">{{ $t("message.intro") }}</h1>
+                    <p class="">
+                        {{ $t("message.intro2") }}<br>{{ $t("message.intro2b") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-start">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_01.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text1") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-end">
+                <div class="col-lg-5 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_02.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text2") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-start">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_03.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text3") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-end">
+                <div class="col-lg-5 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_04.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text4") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-start inner">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_05.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text5") }}
+                    </p>
+                    
+                    <img class="bkg" src="assets/inner.svg"/>
+                </div>            
+            </div>
+            
+            <div class="row justify-content-md-end">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_06.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text6") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-start">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_07.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text7") }} <span>{{ $t("message.text7b") }}</span> {{ $t("message.text7c") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-end">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_08.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text8") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-start">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_09.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text9") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-end">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_10.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text10") }}<br>{{ $t("message.text10b") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-start">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_11.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text11") }}<br>{{ $t("message.text11b") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-end">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_12.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text12") }} <a class="link" href="https://samasama.studio" target="_blank" v-on:mouseenter="underlineAnim" v-on:mouseleave="leaveUnderlineAnim">{{ $t("message.text12b") }}<span class="underline"></span></a>{{ $t("message.text12c") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-start">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_13.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text13") }} <a class="link" href="https://codesters.club" target="_blank" v-on:mouseenter="underlineAnim" v-on:mouseleave="leaveUnderlineAnim">codesters.club<span class="underline"></span></a> {{ $t("message.text13b") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-end">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_14.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text14") }}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-md-start">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="assets/ilus_15.svg" />
+                    </div>
+                    <p class="">
+                        {{ $t("message.text15") }}                    
+                    </p>
+                </div>
+            </div>
+            
+            
+            <!--   CONTACT     -->
+            <div id="contact" class="row justify-content-md-center">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="drawingWrapper">
+                        <img src="/assets/ilus_contact.svg"/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <h2 class="">{{ $t("message.contactTitle") }}</h2>
+                    <p class="">
+                        {{ $t("message.contactText") }}
+                    </p>
+                    <a class="button" href="mailto:juanmanuelynz@gmail.com?subject=Hello Juan!">{{ $t("message.contactButton") }}</a>
+                </div>            
+            </div>
+        </div>  
+    </div>
       
     <div id="grain"></div>
       
@@ -299,9 +286,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--Boostrap-->
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+   
     <script src="/plugins/anime.min.js"></script>  
-    <script src="/scripts/script.js" defer></script>
+    <script type="module" src="/scripts/script.js"></script>
   </body>
 </html>
