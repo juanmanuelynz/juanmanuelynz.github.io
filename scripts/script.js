@@ -7,6 +7,9 @@ const VueApp = {
         StoryBlock,       
     },
     
+    // button: 'buttonProfesion',
+    // url: 'https://www.behance.net/juanmanuelynz',
+
     data() {
         return {            
             grainAnim: '',
@@ -16,8 +19,7 @@ const VueApp = {
                     text: 'textProfesion',
                     image: '/assets/parami_Viriya.jpg',
                     isRight: false,
-                    button: 'buttonProfesion',
-                    url: 'https://www.behance.net/juanmanuelynz',
+                    
                 },
                 {
                     text: 'textHuman',
