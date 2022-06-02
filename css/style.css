@@ -437,8 +437,8 @@ section.is-large {
 }
 
 .story .imgWrap {
-  -webkit-filter: drop-shadow(0 3px 9px rgba(0, 0, 0, 0.33));
-          filter: drop-shadow(0 3px 9px rgba(0, 0, 0, 0.33));
+  -webkit-filter: drop-shadow(0 3px 18px rgba(0, 0, 0, 0.36));
+          filter: drop-shadow(0 3px 18px rgba(0, 0, 0, 0.36));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,7 +448,7 @@ section.is-large {
 }
 
 .story img {
-  width: 80%;
+  width: 100%;
   height: auto;
   -webkit-clip-path: url(#atomClip);
   clip-path: url(#atomClip);
@@ -462,6 +462,37 @@ section.is-large {
 .story .button {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+#contact {
+  background: #10100F;
+}
+
+#contact .contactWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .contactWrapper h2, #contact .contactWrapper p {
+  color: #E9EDD8;
+}
+
+#contact .contactWrapper .button {
+  background: #E9EDD8;
+  color: #10100F;
+}
+
+#contact .contactWrapper .button:hover {
+  color: #E9EDD8;
+  background: #0C978B;
 }
 
 footer {

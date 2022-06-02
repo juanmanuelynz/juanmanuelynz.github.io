@@ -454,7 +454,7 @@ section {
     }
 
     img {
-        width: 80%;
+        width: 100%;
         height: auto;
         -webkit-clip-path: url(#atomClip);
         clip-path: url(#atomClip);
@@ -467,6 +467,31 @@ section {
 
     .button {
         align-self: flex-start;
+    }
+}
+
+#contact {
+    background: $color-black;
+    // margin-bottom: 32px;
+
+    .contactWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2, p {
+            color: $color-whiteMana;
+        }
+
+        .button {
+            background: $color-whiteMana;
+            color: $color-black;
+
+            &:hover {
+                color: $color-whiteMana;
+                background: $color-nepaliGreen;        
+            }
+        }
     }
 }
 

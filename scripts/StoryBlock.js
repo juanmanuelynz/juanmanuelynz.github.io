@@ -9,7 +9,7 @@ export default {
             <p class="">
                 {{ $t("message." + item.text) }}
             </p>
-            <a v-if="item.button != null" class="button" target="_blank" :href="item.url">{{ $t("message." + item.button) }}</a>
+            <a v-if="item.button != null" class="button alternative" target="_blank" :href="item.url">{{ $t("message." + item.button) }}</a>
         </div>
     </section>
     `
