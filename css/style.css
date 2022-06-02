@@ -450,8 +450,8 @@ section.is-large {
 .story img {
   width: 100%;
   height: auto;
-  -webkit-clip-path: url(#atomClip);
-  clip-path: url(#atomClip);
+  -webkit-clip-path: inset(3% round 46% 42%);
+  clip-path: inset(3% round 46% 42%);
 }
 
 .story p {
